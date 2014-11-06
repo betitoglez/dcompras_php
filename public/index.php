@@ -13,6 +13,13 @@ set_include_path(implode(PATH_SEPARATOR, array(
     get_include_path(),
 )));
 
+spl_autoload_register(function($classname){
+	if (substr($classname,0,5) == "Zend_"){
+		return false;
+	}
+	require_once str_replace('\\', '/', $classname) . '.php';
+});
+
 /** Zend_Application */
 require_once 'Zend/Application.php';
 
