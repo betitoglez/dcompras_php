@@ -8,8 +8,8 @@ class Categories extends Mapping {
 	
 	protected $_aMap = array(
 		"maps" => array(
-				array(
-						"name" => "NOMBRE A",
+				50 => array(
+						"name" => "SUDADERA_HOMBRE",
 						"parent" => null
 					 )
 		)

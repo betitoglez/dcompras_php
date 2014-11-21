@@ -1,6 +1,6 @@
 <?php
 namespace Dcompras;
-
+libxml_use_internal_errors(true);
 // --- Selector.inc - (c) Copyright TJ Holowaychuk <tj@vision-media.ca> MIT Licensed
 define ( 'SELECTOR_VERSION', '1.1.5' );
 /**

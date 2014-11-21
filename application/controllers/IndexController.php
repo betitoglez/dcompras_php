@@ -4,6 +4,7 @@ use Dcompras\Item\Generic;
 use Dcompras\Mapping;
 use Dcompras\SelectorDOM;
 use Dcompras\DI;
+use Dcompras\Shop\Zara;
 
 class IndexController extends Zend_Controller_Action
 {
@@ -15,7 +16,7 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-    	
+    	/*
     	$oHttpClient = DI::get("HttpClient");
     	$oHttpClient = new \Zend_Http_Client();
     	
@@ -28,7 +29,11 @@ class IndexController extends Zend_Controller_Action
     	$aImages = $oDomSelector->select("#products a.item img");
     	
     	var_dump($aImages);
-    
+        */
+    	
+    	$oShow = new Zara();
+    	var_dump($oShow->getAllItems());
+    	die();
     	
         // action body
         /*
