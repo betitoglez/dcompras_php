@@ -21,6 +21,14 @@ final class Zara extends Shop {
     	$aImages = $oDomSelector->select("#products a.item img");
     	return $aImages;
 	}
+	
+	/* (non-PHPdoc)
+	 * @see \Dcompras\Shop::_nextCategoryPage()
+	 */
+	protected function _nextCategoryPage() {
+		return false;
+	}
+
 
 }
 

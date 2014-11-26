@@ -18,6 +18,26 @@ class DI {
 		return self::$self->$type();
 	}
 	
+	
+	/**
+	 * 
+	 * @return mixed|\Zend_Log
+	 */
+	public function Log ()
+	{
+		if (\Zend_Registry::isRegistered("Log")){
+			return \Zend_Registry::get("Log");
+		}
+		$oLog = new \Zend_Log();
+		$oFile = fopen("C:/Prueba.txt", "w+");
+		$oXMLFormatter = new \Zend_Log_Formatter_Xml();
+		$oLogWriter = new \Zend_Log_Writer_Stream($oFile);	
+		$oLog->addWriter($oLogWriter);
+		
+		\Zend_Registry::set("Log", $oLog);
+		return $oLog;
+	}
+	
 	/**
 	 * @adapter Socket
 	 * @return mixed|\Zend_Http_Client

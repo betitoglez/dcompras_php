@@ -9,20 +9,36 @@ abstract class Shop {
 	
 	protected $categories = array();
 	
+	protected $_lastRequest;
+	protected $_lastResponse;
+	
 	public function getItemsCategory ($idCategory,$id){
 		//Get URL and proceed
-		$sBody = $this->getHTML($idCategory["url"]);		
+		if (is_array($idCategory)){
+			$sBody = $this->getHTML($idCategory["url"]);
+		}else{
+			$sBody = $this->getHTML($idCategory);
+		}		
+		/*
+		$oLog = DI::get("Log");
+		$oLog->log("Hola", \Zend_Log::INFO);
+		*/
 		if (null === $sBody){
 			$this->_errorCategory($id);
 			return array();
-		}else{		
+		}else{	
 			$aItems = $this->_searchItems($sBody);
-			return $aItems;
+			if (($sUrl = $this->_nextCategoryPage()) === false){
+				return $aItems;
+			}else{
+				return array_merge($aItems,$this->getItemsCategory($sUrl, $id));
+			}						
 		}
 		
 	}
 	
 	abstract protected function _searchItems ($sBody);
+	abstract protected function _nextCategoryPage ();
 	
     public function getAllItems(){
 	   $aItems = array();
@@ -44,7 +60,9 @@ abstract class Shop {
     public function getHTML ($sUri){
     	$oHttpClient = DI::get("HttpClient");
     	$oHttpClient->setUri($sUri);
-    	$oResponse = $oHttpClient->request();   	   	
+    	$this->_lastRequest = $oHttpClient;
+    	$oResponse = $oHttpClient->request(); 
+    	$this->_lastResponse = $oResponse;  	   	
     	if ($oResponse->isSuccessful()){
     		return $oResponse->getBody();
     	}else{
