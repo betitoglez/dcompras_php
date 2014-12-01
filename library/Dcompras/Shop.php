@@ -12,10 +12,18 @@ abstract class Shop {
 	protected $_lastRequest;
 	protected $_lastResponse;
 	
+	//Internal
+	protected $_itemSelector;
+	
+	/**@Overridable**/
+	protected function _formatCategoryUrl ($url){
+		return $url;
+	}
+	
 	public function getItemsCategory ($idCategory,$id){
 		//Get URL and proceed
 		if (is_array($idCategory)){
-			$sBody = $this->getHTML($idCategory["url"]);
+			$sBody = $this->getHTML($this->_formatCategoryUrl($idCategory["url"]));
 		}else{
 			$sBody = $this->getHTML($idCategory);
 		}		
@@ -38,6 +46,13 @@ abstract class Shop {
 	}
 	
 	abstract protected function _searchItems ($sBody);
+	protected function _parseItem ($oItem){
+		$oDocument = new \DOMDocument;
+		$cloned = $oItem->cloneNode(TRUE);
+		$oDocument->appendChild($oDocument->importNode($cloned,TRUE));
+		$oAuxSelector = new SelectorDOM($oDocument);
+		$this->_itemSelector = $oAuxSelector;
+	}
 	abstract protected function _nextCategoryPage ();
 	
     public function getAllItems(){

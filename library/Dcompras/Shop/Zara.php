@@ -4,6 +4,8 @@ namespace Dcompras\Shop;
 
 use Dcompras\Shop;
 use Dcompras;
+use Dcompras\Item\Generic;
+use Dcompras\SelectorDOM;
 
 final class Zara extends Shop {
 	
@@ -16,10 +18,17 @@ final class Zara extends Shop {
 		)		
 	);
 	
+	
+	
+	
 	protected function _searchItems($sBody){
 		$oDomSelector = new Dcompras\SelectorDOM($sBody);
-    	$aImages = $oDomSelector->select("#products a.item img");
-    	return $aImages;
+    	$aProducts = $oDomSelector->select("#products li",false);
+    	$aResult = array();
+    	foreach ($aProducts as $product){
+    		$aResult[] = $this->_parseItem($product);
+    	}
+    	return $aResult;
 	}
 	
 	/* (non-PHPdoc)
@@ -28,6 +37,34 @@ final class Zara extends Shop {
 	protected function _nextCategoryPage() {
 		return false;
 	}
+	
+	/* (non-PHPdoc)
+	 * @see \Dcompras\Shop::_parseItem()
+	 */
+	protected function _parseItem($oItem) {	
+
+		parent::_parseItem($oItem);	
+		$a = $this->_itemSelector->select("a.name.item")[0];
+		
+		$name = isset($a["text"])?$a["text"]:null;
+		$url  = isset($a["attributes"]["href"])?$a["attributes"]["href"]:null;
+		
+		$a = $this->_itemSelector->select("a.gaProductDetailsLink.item")[0];
+		$extid = isset($a["attributes"]["data-item"])?$a["attributes"]["data-item"]:null;
+		
+		$price = isset($this->_itemSelector->select("span.price span")[0]["attributes"]["data-ecirp"])?$this->_itemSelector->select("span.price span")[0]["attributes"]["data-ecirp"]:null;
+		$price = floatval(str_replace(",", ".", $price));
+		
+		$oGen = new Generic;
+		$oGen->price = $price;
+		$oGen->name  = $name;
+		$oGen->url   = $url;
+		$oGen->extid = $extid;
+		
+			
+		return $oGen;	
+	}
+
 
 
 }

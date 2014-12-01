@@ -14,14 +14,17 @@ define ( 'SELECTOR_VERSION', '1.1.5' );
  */
 class SelectorDOM {
 	public $xpath;
+	public $dom;
 	
 	public function __construct($data) {
 		if ($data instanceof \DOMDocument) {
 			$this->xpath = new \DOMXpath ( $data );
+			$this->dom = $data;
 		} else {
 			$dom = new \DOMDocument ();
 			$dom->loadHTML ( $data );
 			$this->xpath = new \DOMXpath ( $dom );
+			$this->dom = $dom;
 		}
 	}
 	public function select($selector, $as_array = true) {
