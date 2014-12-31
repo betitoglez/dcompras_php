@@ -22,20 +22,26 @@ abstract class Shop {
 	protected $totalPages;
 	protected $internalCount = 0;
 	
+	protected $config;
+	
 	/**@Overridable**/
 	protected function _formatCategoryUrl ($url){
 		return $url;
 	}
 	
+	public function __construct (){
+		$this->config = \Zend_Registry::get("config");
+	}
+	
 	public function getItemsCategory ($idCategory,$id){
 		$this->currentCatId = $id;
-		//Get URL and proceed
-		if (is_array($idCategory)){
-			$sCurrentUrl = $this->_formatCategoryUrl($idCategory["url"]);
-			$sBody = $this->getHTML($sCurrentUrl);
+		//Get URL and proceed		 
+		if (is_array($idCategory)){		
+			$sCurrentUrl = $idCategory["url"];
+			$sBody = $this->getHTML($this->_formatCategoryUrl($idCategory["url"]));
 		}else{
 			$sCurrentUrl = $idCategory;
-			$sBody = $this->getHTML($idCategory);
+			$sBody = $this->getHTML($this->_formatCategoryUrl($idCategory));
 		}			
 		/*
 		$oLog = DI::get("Log");
@@ -76,6 +82,7 @@ abstract class Shop {
 	   
        foreach ($this->categories as $id=>$category){
        	   $this->internalCount = 0;
+       	   $this->currentPage = 0;
 		   $aItems = array_merge($aItems,$this->getItemsCategory($category,$id));	   	
 	   }    	
 	   return $aItems;
@@ -103,6 +110,25 @@ abstract class Shop {
     		$this->_error($oResponse,$oHttpClient);
     		return null;
     	}
+    }
+    
+    protected function saveImage ($img , $name){
+      if ($this->config["storeImages"]){
+      	
+      	if (file_exists (IMAGES_PATH."/".$name.".png") && !$this->config["overwriteImages"]){
+      		return;
+      	}   
+      		
+    	$oImage = new Image($img);
+    	
+    	$oImage->resizeTo(150, null,"maxwidth");
+    	$oImage->saveImage(IMAGES_PATH."/".$name."-large.png");
+    	
+    	$oImage->resizeTo(50, null,"maxwidth");
+    	$oImage->saveImage(IMAGES_PATH."/".$name.".png");
+    	
+    	$oImage->destroyOldImage();
+      }  	
     }
 	
 }

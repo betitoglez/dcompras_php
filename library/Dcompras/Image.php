@@ -11,6 +11,8 @@ class Image {
 	private $origHeight;
 	private $resizeWidth;
 	private $resizeHeight;
+	
+	private $oldname;
 
 	/**
 	 * Class constructor requires to send through the image filename
@@ -21,7 +23,9 @@ class Image {
 	{
 		
 		$ch = curl_init($filename);
-		$_auxFile = IMAGES_PATH ."/" . microtime(true).rand(0, 999999);
+		$oldname = microtime(true).rand(0, 999999);
+		$_auxFile = IMAGES_PATH ."/" . $oldname;
+		$this->oldname = $oldname;
 		$fp = fopen($_auxFile , 'wb');
 		curl_setopt($ch, CURLOPT_FILE, $fp);
 		curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -123,6 +127,12 @@ class Image {
 	    }
 
 	    imagedestroy($this->newImage);
+	    
+	}
+	
+	public function destroyOldImage ()
+	{
+		return unlink( IMAGES_PATH ."/" . $this->oldname);
 	}
 
 	/**

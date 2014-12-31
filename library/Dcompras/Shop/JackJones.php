@@ -22,12 +22,12 @@ final class JackJones extends Shop {
 		)		,
 		
 		30 => array(
-			"url" => "http://jackjones.com/shop/camisas/jj-shop-shirts,es_ES,sc.html?prefn1=qualifying-promotion-id&prefv1=searchfake-hidemarkdowns&prefn2=scopeFilter&prefv2=default&sz=12&forceScope=&parameterpaging=true&format=ajax&productsperrow=3" //Añadir start=XX
+			"url" => "http://jackjones.com/shop/camisas/jj-shop-shirts,es_ES,sc.html?prefn1=qualifying-promotion-id&prefv1=searchfake-hidemarkdowns&prefn2=scopeFilter&prefv2=default&sz=12&forceScope=&parameterpaging=true&format=ajax&productsperrow=3&" //Añadir start=XX
 		)		,	 
 	);
 	
 	protected function _formatCategoryUrl ($url){
-		return $url."start=".$this->currentPage;
+		return $url."&start=".$this->currentPage;
 	}
 	
 	protected function _nextCategoryPage($sCurrentUrl) {
@@ -74,7 +74,7 @@ final class JackJones extends Shop {
 		if (empty($this->_cookies)){
 			$this->_setCookies();
 		}
-		
+
     	$oHttpClient->setUri($sUri);
     	
     	foreach ($this->_cookies as $cookie){
@@ -128,8 +128,6 @@ final class JackJones extends Shop {
 		$name = isset($a["text"])?utf8_decode(trim($a["text"])):null;
 		$url  = isset($a["attributes"]["href"])?$a["attributes"]["href"]:null;
 		
-		//$a = $this->_itemSelector->select("a.gaProductDetailsLink.item")[0];
-		//$extid = isset($a["attributes"]["data-item"])?$a["attributes"]["data-item"]:null;
 		
 		$price = isset($this->_itemSelector->select("div.salesprice span")[0]["text"])?$this->_itemSelector->select("div.salesprice span")[0]["text"]:null;
 		$price = str_ireplace(array("?"), "", utf8_decode($price));
@@ -141,13 +139,13 @@ final class JackJones extends Shop {
 		$oGen->price = $price;
 		$oGen->name  = $name;
 		$oGen->url   = $url;
-		//$oGen->extid = $extid;
+		
+		$id = explode( "/",$url);
+		$extid = explode(",",array_pop($id))[0]; 
+		$oGen->extid = $extid;
+		
 		$oGen->imgcusurl = $img;
-		/*
-		$oImage = new Image("http:".$img);
-		$oImage->resizeTo(50, 50);
-		$oImage->saveImage(IMAGES_PATH."/".$this->id."-".$oGen->extid);
-		*/
+		$this->saveImage($img ,$this->id."-".$oGen->extid);
 			
 		return $oGen;	
 	}
