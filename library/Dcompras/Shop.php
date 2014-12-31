@@ -2,10 +2,13 @@
 
 namespace Dcompras;
 
+use Dcompras\Item\Generic;
 abstract class Shop {
 	
 	protected $name;
 	protected $id;
+	
+	protected $currentCatId;
 	
 	protected $categories = array();
 	
@@ -15,18 +18,25 @@ abstract class Shop {
 	//Internal
 	protected $_itemSelector;
 	
+	protected $currentPage = 0;
+	protected $totalPages;
+	protected $internalCount = 0;
+	
 	/**@Overridable**/
 	protected function _formatCategoryUrl ($url){
 		return $url;
 	}
 	
 	public function getItemsCategory ($idCategory,$id){
+		$this->currentCatId = $id;
 		//Get URL and proceed
 		if (is_array($idCategory)){
-			$sBody = $this->getHTML($this->_formatCategoryUrl($idCategory["url"]));
+			$sCurrentUrl = $this->_formatCategoryUrl($idCategory["url"]);
+			$sBody = $this->getHTML($sCurrentUrl);
 		}else{
+			$sCurrentUrl = $idCategory;
 			$sBody = $this->getHTML($idCategory);
-		}		
+		}			
 		/*
 		$oLog = DI::get("Log");
 		$oLog->log("Hola", \Zend_Log::INFO);
@@ -36,7 +46,8 @@ abstract class Shop {
 			return array();
 		}else{	
 			$aItems = $this->_searchItems($sBody);
-			if (($sUrl = $this->_nextCategoryPage()) === false){
+			$sUrl = $this->_nextCategoryPage($sCurrentUrl);
+			if ($sUrl === false){
 				return $aItems;
 			}else{
 				return array_merge($aItems,$this->getItemsCategory($sUrl, $id));
@@ -52,12 +63,19 @@ abstract class Shop {
 		$oDocument->appendChild($oDocument->importNode($cloned,TRUE));
 		$oAuxSelector = new SelectorDOM($oDocument);
 		$this->_itemSelector = $oAuxSelector;
+		
+		$oGeneric = new Generic();
+		$oGeneric->shopid = $this->id;
+		$oGeneric->catid  = $this->currentCatId;
+		return $oGeneric; 
 	}
-	abstract protected function _nextCategoryPage ();
+	abstract protected function _nextCategoryPage ($sCurrentUrl);
 	
     public function getAllItems(){
 	   $aItems = array();
+	   
        foreach ($this->categories as $id=>$category){
+       	   $this->internalCount = 0;
 		   $aItems = array_merge($aItems,$this->getItemsCategory($category,$id));	   	
 	   }    	
 	   return $aItems;
@@ -77,7 +95,8 @@ abstract class Shop {
     	$oHttpClient->setUri($sUri);
     	$this->_lastRequest = $oHttpClient;
     	$oResponse = $oHttpClient->request(); 
-    	$this->_lastResponse = $oResponse;  	   	
+    	$this->_lastResponse = $oResponse;    	
+
     	if ($oResponse->isSuccessful()){
     		return $oResponse->getBody();
     	}else{

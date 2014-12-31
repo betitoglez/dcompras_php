@@ -6,6 +6,7 @@ use Dcompras\Shop;
 use Dcompras;
 use Dcompras\Item\Generic;
 use Dcompras\SelectorDOM;
+use Dcompras\Image;
 
 final class Zara extends Shop {
 	
@@ -15,7 +16,11 @@ final class Zara extends Shop {
 	protected $categories = array(
 		50 => array(
 			"url" => "http://www.zara.com/es/es/hombre/sudaderas-c309502.html"
-		)		
+		)		,
+			
+		30 => array(
+			"url" => "http://www.zara.com/es/es/mujer/camisetas-c269189.html"		
+		)
 	);
 	
 	
@@ -34,7 +39,7 @@ final class Zara extends Shop {
 	/* (non-PHPdoc)
 	 * @see \Dcompras\Shop::_nextCategoryPage()
 	 */
-	protected function _nextCategoryPage() {
+	protected function _nextCategoryPage($sCurrentUrl) {
 		return false;
 	}
 	
@@ -43,7 +48,7 @@ final class Zara extends Shop {
 	 */
 	protected function _parseItem($oItem) {	
 
-		parent::_parseItem($oItem);	
+		$oGen = parent::_parseItem($oItem);	
 		$a = $this->_itemSelector->select("a.name.item")[0];
 		
 		$name = isset($a["text"])?$a["text"]:null;
@@ -55,12 +60,19 @@ final class Zara extends Shop {
 		$price = isset($this->_itemSelector->select("span.price span")[0]["attributes"]["data-ecirp"])?$this->_itemSelector->select("span.price span")[0]["attributes"]["data-ecirp"]:null;
 		$price = floatval(str_replace(",", ".", $price));
 		
-		$oGen = new Generic;
+		$img = isset($this->_itemSelector->select("img.product-img")[0]["attributes"]["data-src"])?$this->_itemSelector->select("img.product-img")[0]["attributes"]["data-src"]:null;
+		
+		
 		$oGen->price = $price;
 		$oGen->name  = $name;
 		$oGen->url   = $url;
 		$oGen->extid = $extid;
-		
+		$oGen->imgcusurl = $img;
+		/*
+		$oImage = new Image("http:".$img);
+		$oImage->resizeTo(50, 50);
+		$oImage->saveImage(IMAGES_PATH."/".$this->id."-".$oGen->extid);
+		*/
 			
 		return $oGen;	
 	}

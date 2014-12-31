@@ -18,7 +18,7 @@ class DI {
 		return self::$self->$type();
 	}
 	
-	
+	 
 	/**
 	 * 
 	 * @return mixed|\Zend_Log
@@ -49,6 +49,8 @@ class DI {
 		}
 		
 		$oHttpClient = new \Zend_Http_Client();
+		$oHttpClient->setAdapter(new \Zend_Http_Client_Adapter_Curl());
+
 		\Zend_Registry::set("HttpClient", $oHttpClient);
 		return $oHttpClient;
 	}
