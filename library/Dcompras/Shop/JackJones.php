@@ -12,16 +12,16 @@ use Dcompras\Image;
 final class JackJones extends Shop {
 	
 	protected $id = 30;
-	protected $name = "jackjones";
+	protected $name = "Jack and Jones";
 	
 	protected $_cookies = array();
 	
 	protected $categories = array(
-		50 => array(
+		52 => array(
 			"url" => "http://jackjones.com/shop/sudaderas/jj-shop-sweatshirts,es_ES,sc.html?sz=12&format=ajax&" //Añadir start=XX
 		)		,
 		
-		30 => array(
+		32 => array(
 			"url" => "http://jackjones.com/shop/camisas/jj-shop-shirts,es_ES,sc.html?prefn1=qualifying-promotion-id&prefv1=searchfake-hidemarkdowns&prefn2=scopeFilter&prefv2=default&sz=12&forceScope=&parameterpaging=true&format=ajax&productsperrow=3&" //Añadir start=XX
 		)		,	 
 	);
@@ -137,15 +137,15 @@ final class JackJones extends Shop {
 		
 		
 		$oGen->price = $price;
-		$oGen->name  = $name;
+		$oGen->name  = utf8_encode($name);
 		$oGen->url   = $url;
 		
 		$id = explode( "/",$url);
 		$extid = explode(",",array_pop($id))[0]; 
-		$oGen->extid = $extid;
+		$oGen->extid = $this->id."-".$extid;
 		
 		$oGen->imgcusurl = $img;
-		$this->saveImage($img ,$this->id."-".$oGen->extid);
+		$this->saveImage($img , $oGen->extid);
 			
 		return $oGen;	
 	}

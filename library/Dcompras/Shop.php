@@ -130,6 +130,16 @@ abstract class Shop {
     	$oImage->destroyOldImage();
       }  	
     }
+    
+    public function synchronize ()
+    {
+    	if (DI::get("Db")->count("stores","id",$this->id) == 0){
+    		DI::get("Db")->insert("stores",array(
+    		"id" => $this->id ,
+    		"name" => $this->name
+    		));
+    	}
+    }
 	
 }
 

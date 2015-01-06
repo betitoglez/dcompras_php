@@ -1,0 +1,39 @@
+<ion-view view-title="Filtrar">
+  <ion-content>
+     <div class="list list-inset">
+	   <label class="item item-input item-select">
+	    <div class="input-label">
+	      Tiendas
+	    </div>
+	    <select ng-model="storesModel" ng-options="store.name for store in stores track by store.id">
+	    </select>
+	   </label>
+	</div>
+	
+	<div class="list list-inset">
+	   <label class="item item-input item-select">
+	    <div class="input-label">
+	      Categorias
+	    </div>
+	    <select ng-model="categoriesModel" ng-options="category.name for category in categories track by category.id">
+	    </select>
+	   </label>
+	</div>
+	
+	<div class="list list-inset">
+	  <label class="item item-input">
+	    <input type="number" placeholder="Precio maximo" ng-model="maxPrice" step="0.1">
+	  </label>
+	</div>
+	
+	<div class="list list-inset">
+	  <label class="item item-input">
+	    <input type="number" placeholder="Precio minimo" ng-model="minPrice" step="0.1">
+	  </label>
+	</div>
+	
+	<button class="button button-block button-positive icon-left ion-navicon-round">
+	  Filtrar
+	</button>
+  </ion-content>
+</ion-view>

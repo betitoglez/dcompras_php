@@ -2,7 +2,6 @@
 
 namespace Dcompras;
 
-use Dcompras\Mapping;
 
 abstract class Mapping {
 	
@@ -15,10 +14,15 @@ abstract class Mapping {
 	public static function getInstance ($type){
 		$class = "Dcompras\\Mapping\\$type";
 		if (!class_exists($class)){
-			throw new Exception("La clase $type no existe");
+			throw new \Exception("La clase $type no existe");
 			return false;
 		}
 		return new $class;
+	}
+	
+	public function synchronize ()
+	{
+		return true;
 	}
 }
 

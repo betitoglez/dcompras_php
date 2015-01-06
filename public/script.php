@@ -4,6 +4,8 @@ error_reporting(E_ALL);
 use Dcompras\DI;
 use Dcompras\Shop\Zara;
 use Dcompras\Shop\JackJones;
+use Dcompras\Mapping\Categories;
+use Dcompras\Mapping;
 // Define path to application directory
 defined('APPLICATION_PATH')
     || define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../application'));
@@ -40,6 +42,9 @@ $application = new Zend_Application(
 
 Zend_Registry::set("config",$application->getOptions());
 
+//Synchronize Categories
+Mapping::getInstance("categories")->synchronize();
+
 if (isset($_SERVER["argv"])){
 	$aArgs = $_SERVER["argv"];
 	if (count($aArgs)==1){
@@ -54,8 +59,13 @@ if (isset($_SERVER["argv"])){
         }
 	}else{
 		$sClassName = $aArgs[1];
-		$oShow = new $sClassName();
-		var_dump($oShow->getAllItems());
+		$oStore = new $sClassName();
+		$oStore->synchronize();
+		$items = $oStore->getAllItems();
+		foreach ($items as $item){
+			DI::get("Db")->synchronizeItem($item);
+		}
+		
 	}
 }else{
 	$oShow = new JackJones();
