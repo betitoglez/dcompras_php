@@ -11,6 +11,33 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 		 url : "http://local.dcompras"
 	};
 })
+.factory ("i18",function(){
+	var i18 = function () {
+		
+		this._t = {
+			"CARGANDO" : {
+				"es" : "Cargando..."
+			} ,
+			"SUDADERAS_HOMBRE" : {
+				"es" : "Sudaderas hombre"
+			}
+		};
+		
+		this.language = "es";
+		this.setLanguage = function (lang){
+			this.language = lang;
+		} ;
+		this.getLanguage = function () {
+			return this.language;
+		} ;
+		
+		this.translate = function (key){
+			return typeof this._t[key] !== "undefined"?this._t[key][this.language]:"i18 not available";
+		} ;
+	};
+	
+	return new i18;
+})
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -56,7 +83,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/items",
       views: {
         'menuContent': {
-          templateUrl: "templates/playlists.html",
+          templateUrl: "templates/items.html",
           controller: 'ItemsCtrl'
         }
       }
@@ -66,7 +93,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: "/item/:ItemId",
     views: {
       'menuContent': {
-        templateUrl: "templates/playlist.html",
+        templateUrl: "templates/item.html",
         controller: 'ItemCtrl'
       }
     }

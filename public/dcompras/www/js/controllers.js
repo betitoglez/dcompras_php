@@ -1,6 +1,14 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope,$http, $ionicModal, $timeout, Global) {
+.controller('AppCtrl', function($scope,$http, $ionicModal, $timeout, Global,i18,$ionicLoading) {
+	//Translate module
+	$scope.t = i18;
+	
+	//Loading
+	$ionicLoading.show({
+	      template: i18.translate("CARGANDO")
+	});
+	
 	$http.get(Global.url + "/api/stores").success(function(data){
 		$scope.stores = [{id:0,name:"Todas"}];
 		for (var i in data){
@@ -32,11 +40,11 @@ angular.module('starter.controllers', [])
     	);
     };
     
-    $scope.items = [
-                    { name: 'Cargando...', id: 1 }
-                  ];
+    $scope.items = [];
+    
     $http.get(Global.url + "/api/products").success(function(data){
 		$scope.items = data;
+		$ionicLoading.hide();
 	});
     
     $scope.loadMore = function () {
@@ -74,5 +82,34 @@ angular.module('starter.controllers', [])
   
 })
 
-.controller('ItemCtrl', function($scope, $stateParams) {
+.controller('ItemCtrl', function($scope, $stateParams, $location,$ionicModal) {
+	if ($scope.items.length == 0){
+		$location.path("/app/items");
+	}
+	
+	$ionicModal.fromTemplateUrl('modal-image.html', {
+	    scope: $scope,
+	    animation: 'slide-in-up'
+	  }).then(function(modal) {
+	    $scope.modal = modal;
+	  });
+	  $scope.openModal = function() {
+	    $scope.modal.show();
+	  };
+	  $scope.closeModal = function() {
+	    $scope.modal.hide();
+	  };
+	  //Cleanup the modal when we're done with it!
+	  $scope.$on('$destroy', function() {
+	    $scope.modal.remove();
+	  });
+	  
+	var id = $stateParams.ItemId, selectedId = null;
+	for (var i in $scope.items){
+		if ($scope.items[i].id == id){
+			selectedId = i;
+		}
+	}
+	$scope.selectedItem = $scope.items[selectedId];
+	
 });
