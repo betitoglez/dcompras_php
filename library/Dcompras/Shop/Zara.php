@@ -11,14 +11,14 @@ use Dcompras\Image;
 final class Zara extends Shop {
 	
 	protected $id = 20;
-	protected $name = "zara";
+	protected $name = "Zara";
 	
 	protected $categories = array(
-		50 => array(
+		52 => array(
 			"url" => "http://www.zara.com/es/es/hombre/sudaderas-c309502.html"
 		)		,
 			
-		30 => array(
+		31 => array(
 			"url" => "http://www.zara.com/es/es/mujer/camisetas-c269189.html"		
 		)
 	);
@@ -64,13 +64,13 @@ final class Zara extends Shop {
 		
 		
 		$oGen->price = $price;
-		$oGen->name  = $name;
+		$oGen->name  = utf8_decode($name);
 		$oGen->url   = $url;
-		$oGen->extid = $extid;
+		$oGen->extid = $this->id . "-" . $extid;
 		$oGen->imgcusurl = $img;
 		
 		//Save the image url + name
-		$this->saveImage("http:".$img ,$this->id."-".$oGen->extid);
+		$this->saveImage("http:".$img ,$oGen->extid);
 			
 		return $oGen;	
 	}

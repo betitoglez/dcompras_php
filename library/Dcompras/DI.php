@@ -2,6 +2,7 @@
 
 namespace Dcompras;
 
+use Dcompras\Db\Service;
 class DI {
 	
 	private static $self;
@@ -53,6 +54,18 @@ class DI {
 
 		\Zend_Registry::set("HttpClient", $oHttpClient);
 		return $oHttpClient;
+	}
+	
+	
+	public function Db ()
+	{
+		if (\Zend_Registry::isRegistered("Db")){
+			return \Zend_Registry::get("Db");
+		}
+		$config = \Zend_Registry::get("config")["database"];
+		$oService = new Service($config);
+		\Zend_Registry::set("Db", $oService);
+		return $oService;
 	}
 }
 
