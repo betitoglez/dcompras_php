@@ -29,6 +29,11 @@ class Service {
 		return $this->adapter->insert($table, $aColumns);
 	}
 	
+	public function update ($table,Array $aColumns, $where)
+	{
+		return $this->adapter->update($table, $aColumns,$where); 
+	}
+	
 	public function count ($table,$column,$value)
 	{
 		return (int) $this->adapter->fetchCol("SELECT COUNT(*) FROM " . $this->adapter->quoteTableAs($table) . 
@@ -51,7 +56,9 @@ class Service {
 		$aAllowedFieldsOrder = array ("id","name" ,"name_desc","price","price_desc", "id_store","date","date_desc" ,"id_category");
 		
 		$oSelect = new \Zend_Db_Select($this->adapter);
-		$oSelect->from("products")->joinLeft(array("B"=>"product_category"), "products.id = B.id_product");
+		$oSelect->from("products")->joinLeft(array("B"=>"product_category"), "products.id = B.id_product",array("id_category"))
+		->joinLeft(array("C"=>"stores"), "products.id_store = C.id", array("storename"=>"C.name"))
+		->joinLeft(array("D"=>"categories"), "B.id_category = D.id", array("categoryname"=>"D.name"));
 		
 		foreach ($aFilter as $key=>$value){
 			if (in_array($key, $aAllowedFields)){
@@ -59,14 +66,21 @@ class Service {
 					$oSelect->where("id = ?", (int) $value);
 				}
 				else if ($key == "name"){
-					$oSelect->where("name LIKE ?" , "%".$value."%");
+					$oSelect->where("products.name LIKE ?" , "%".$value."%");
 				}
 				else if ($key == "price_min" && is_numeric($value)){
-					$oSelect->where("price >= ?" , floatval($value));
+					$oSelect->where("products.price >= ?" , floatval($value));
 				}
 				
 				else if ($key == "price_max" && is_numeric($value)){
-					$oSelect->where("price <= ?" , floatval($value));
+					$oSelect->where("products.price <= ?" , floatval($value));
+				}
+				
+				else if ($key == "id_category" && is_numeric($value)){
+					$oSelect->where("B.id_category = ?" , intval($value));
+				}
+				else if ($key == "id_store" && is_numeric($value)){
+					$oSelect->where("products.id_store = ?" , intval($value));
 				}
 			}
 		}
@@ -113,6 +127,15 @@ class Service {
 					"id_category" => $catid
 			));
 			
+		}else{
+			$this->update("products", array(
+				"id_store"=> $oItem->shopid,
+				"url"=> $oItem->url ,
+				"image"=> $oItem->imgcusurl,
+				"price"=> $oItem->price,
+				"extid"=> $oItem->extid ,
+				"name"=> $oItem->name
+			), array("extid = ?"=>$oItem->extid));
 		}
 	}
 
