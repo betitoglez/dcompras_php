@@ -1,0 +1,2564 @@
+Dcompras\Shop\Zaracreadoarray(422) {
+  [0] =>
+  class Dcompras\Item\Generic#79 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(28) "SUDADERA CERRADA CREMALLERAS"
+      'url' =>
+      string(92) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-cerrada-cremalleras-c309502p2367054.html"
+      'extid' =>
+      string(7) "2367054"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2015/V/0/2/p/0722/402/803/2/w/400/0722402803_1_1_1.jpg?ts=1417796571413"
+    }
+  }
+  [1] =>
+  class Dcompras\Item\Generic#77 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(24) "SUDADERA ABIERTA CAPUCHA"
+      'url' =>
+      string(88) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-abierta-capucha-c309502p2379750.html"
+      'extid' =>
+      string(7) "2379750"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2015/V/0/2/p/1701/410/401/2/w/400/1701410401_1_1_1.jpg?ts=1417201231815"
+    }
+  }
+  [2] =>
+  class Dcompras\Item\Generic#85 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(35.95)
+      'name' =>
+      string(14) "SUDADERA FLOCK"
+      'url' =>
+      string(78) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-flock-c309502p2320017.html"
+      'extid' =>
+      string(7) "2320017"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/4873/308/800/2/w/400/4873308800_1_1_1.jpg?ts=1414685309461"
+    }
+  }
+  [3] =>
+  class Dcompras\Item\Generic#84 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(19.95)
+      'name' =>
+      string(22) "SUDADERA CERRADA PIQUE"
+      'url' =>
+      string(86) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-cerrada-pique-c309502p2380230.html"
+      'extid' =>
+      string(7) "2380230"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2015/V/0/2/p/1701/412/807/2/w/400/1701412807_1_1_1.jpg?ts=1417201721097"
+    }
+  }
+  [4] =>
+  class Dcompras\Item\Generic#81 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(24) "SUDADERA ABIERTA CAPUCHA"
+      'url' =>
+      string(88) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-abierta-capucha-c309502p2379751.html"
+      'extid' =>
+      string(7) "2379751"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2015/V/0/2/p/1701/410/807/2/w/400/1701410807_1_1_1.jpg?ts=1417201390930"
+    }
+  }
+  [5] =>
+  class Dcompras\Item\Generic#78 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(35.95)
+      'name' =>
+      string(17) "SUDADERA CALAVERA"
+      'url' =>
+      string(81) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-calavera-c309502p2163552.html"
+      'extid' =>
+      string(7) "2163552"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/2247/312/800/2/w/400/2247312800_1_1_1.jpg?ts=1414685015298"
+    }
+  }
+  [6] =>
+  class Dcompras\Item\Generic#82 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(24) "SUDADERA ESTAMPADA HOJAS"
+      'url' =>
+      string(88) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-estampada-hojas-c309502p2367295.html"
+      'extid' =>
+      string(7) "2367295"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2015/V/0/2/p/6096/412/802/2/w/400/6096412802_1_1_1.jpg?ts=1418416369317"
+    }
+  }
+  [7] =>
+  class Dcompras\Item\Generic#83 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(19.95)
+      'name' =>
+      string(22) "SUDADERA CERRADA PIQUE"
+      'url' =>
+      string(86) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-cerrada-pique-c309502p2380229.html"
+      'extid' =>
+      string(7) "2380229"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2015/V/0/2/p/1701/412/401/2/w/400/1701412401_1_1_1.jpg?ts=1417201562273"
+    }
+  }
+  [8] =>
+  class Dcompras\Item\Generic#86 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(24) "SUDADERA ABIERTA CAPUCHA"
+      'url' =>
+      string(88) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-abierta-capucha-c309502p2379752.html"
+      'extid' =>
+      string(7) "2379752"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2015/V/0/2/p/1701/410/803/2/w/400/1701410803_2_1_1.jpg?ts=1417201298434"
+    }
+  }
+  [9] =>
+  class Dcompras\Item\Generic#87 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(24) "SUDADERA ABIERTA CAPUCHA"
+      'url' =>
+      string(88) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-abierta-capucha-c309502p2379753.html"
+      'extid' =>
+      string(7) "2379753"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2015/V/0/2/p/1701/410/800/2/w/400/1701410800_2_1_1.jpg?ts=1417201248791"
+    }
+  }
+  [10] =>
+  class Dcompras\Item\Generic#88 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(19.95)
+      'name' =>
+      string(22) "SUDADERA CERRADA PIQUE"
+      'url' =>
+      string(86) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-cerrada-pique-c309502p2380231.html"
+      'extid' =>
+      string(7) "2380231"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2015/V/0/2/p/1701/412/803/2/w/400/1701412803_1_1_1.jpg?ts=1417201670968"
+    }
+  }
+  [11] =>
+  class Dcompras\Item\Generic#89 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(19.95)
+      'name' =>
+      string(22) "SUDADERA CERRADA PIQUE"
+      'url' =>
+      string(86) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-cerrada-pique-c309502p2380232.html"
+      'extid' =>
+      string(7) "2380232"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2015/V/0/2/p/1701/412/800/2/w/400/1701412800_1_1_1.jpg?ts=1417201622768"
+    }
+  }
+  [12] =>
+  class Dcompras\Item\Generic#90 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(24) "SUDADERA BICOLOR CAPUCHA"
+      'url' =>
+      string(88) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-bicolor-capucha-c309502p2005661.html"
+      'extid' =>
+      string(7) "2005661"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/317/812/2/w/400/1701317812_1_1_1.jpg?ts=1407504932310"
+    }
+  }
+  [13] =>
+  class Dcompras\Item\Generic#91 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(35.95)
+      'name' =>
+      string(13) "SUDADERA GOLD"
+      'url' =>
+      string(77) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-gold-c309502p2320018.html"
+      'extid' =>
+      string(7) "2320018"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/4873/307/800/2/w/400/4873307800_1_1_1.jpg?ts=1415039187518"
+    }
+  }
+  [14] =>
+  class Dcompras\Item\Generic#92 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(49.95)
+      'name' =>
+      string(21) "CAPA CREMALLERAS DARK"
+      'url' =>
+      string(85) "http://www.zara.com/es/es/hombre/sudaderas/capa-cremalleras-dark-c309502p2084057.html"
+      'extid' =>
+      string(7) "2084057"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/323/800/2/w/400/1701323800_2_1_1.jpg?ts=1414599949146"
+    }
+  }
+  [15] =>
+  class Dcompras\Item\Generic#93 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(25.95)
+      'name' =>
+      string(18) "SUDADERA ESTAMPADA"
+      'url' =>
+      string(82) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-estampada-c309502p2360541.html"
+      'extid' =>
+      string(7) "2360541"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/0679/327/501/2/w/400/0679327501_2_1_1.jpg?ts=1416306462000"
+    }
+  }
+  [16] =>
+  class Dcompras\Item\Generic#94 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(24) "SUDADERA ABIERTA CAPUCHA"
+      'url' =>
+      string(88) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-abierta-capucha-c309502p2004387.html"
+      'extid' =>
+      string(7) "2004387"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/300/803/2/w/400/1701300803_1_1_1.jpg?ts=1409923131526"
+    }
+  }
+  [17] =>
+  class Dcompras\Item\Generic#95 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(35.95)
+      'name' =>
+      string(23) "SUDADERA CUELLO DRAPEDO"
+      'url' =>
+      string(87) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-cuello-drapedo-c309502p1983649.html"
+      'extid' =>
+      string(7) "1983649"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/0458/304/800/2/w/400/0458304800_2_1_1.jpg?ts=1413908187614"
+    }
+  }
+  [18] =>
+  class Dcompras\Item\Generic#96 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(39.95)
+      'name' =>
+      string(27) "SUDADERA CALAVERA ACOLCHADA"
+      'url' =>
+      string(91) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-calavera-acolchada-c309502p1983669.html"
+      'extid' =>
+      string(7) "1983669"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/2247/306/800/2/w/400/2247306800_1_1_1.jpg?ts=1411665003676"
+    }
+  }
+  [19] =>
+  class Dcompras\Item\Generic#97 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(20) "SUDADERA CUELLO CHAL"
+      'url' =>
+      string(84) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-cuello-chal-c309502p2368160.html"
+      'extid' =>
+      string(7) "2368160"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2015/V/0/2/p/0679/400/401/2/w/400/0679400401_1_1_1.jpg?ts=1418406406483"
+    }
+  }
+  [20] =>
+  class Dcompras\Item\Generic#98 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(25.95)
+      'name' =>
+      string(18) "SUDADERA ESTAMPADA"
+      'url' =>
+      string(82) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-estampada-c309502p2360542.html"
+      'extid' =>
+      string(7) "2360542"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/0679/327/812/2/w/400/0679327812_1_1_1.jpg?ts=1416306486157"
+    }
+  }
+  [21] =>
+  class Dcompras\Item\Generic#99 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(24) "SUDADERA ABIERTA CAPUCHA"
+      'url' =>
+      string(88) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-abierta-capucha-c309502p2004385.html"
+      'extid' =>
+      string(7) "2004385"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/300/800/2/w/400/1701300800_1_1_1.jpg?ts=1409923216431"
+    }
+  }
+  [22] =>
+  class Dcompras\Item\Generic#100 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(35.95)
+      'name' =>
+      string(28) "SUDADERA DETALLES ACOLCHADOS"
+      'url' =>
+      string(92) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-detalles-acolchados-c309502p1983671.html"
+      'extid' =>
+      string(7) "1983671"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/2247/310/803/2/w/400/2247310803_1_1_1.jpg?ts=1411646071343"
+    }
+  }
+  [23] =>
+  class Dcompras\Item\Generic#101 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(16) "SUDADERA CERRADA"
+      'url' =>
+      string(80) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-cerrada-c309502p1983697.html"
+      'extid' =>
+      string(7) "1983697"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/8574/363/800/2/w/400/8574363800_2_1_1.jpg?ts=1409755518588"
+    }
+  }
+  [24] =>
+  class Dcompras\Item\Generic#102 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(49.95)
+      'name' =>
+      string(14) "SUDADERA FELPA"
+      'url' =>
+      string(78) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-felpa-c309502p2005060.html"
+      'extid' =>
+      string(7) "2005060"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/307/800/2/w/400/1701307800_6_1_1.jpg?ts=1411981122678"
+    }
+  }
+  [25] =>
+  class Dcompras\Item\Generic#103 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(28) "SUDADERA ESTAMPADA CAMUFLAJE"
+      'url' =>
+      string(92) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-estampada-camuflaje-c309502p2284643.html"
+      'extid' =>
+      string(7) "2284643"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/8369/317/801/2/w/400/8369317801_2_1_1.jpg?ts=1413903947456"
+    }
+  }
+  [26] =>
+  class Dcompras\Item\Generic#104 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(25.95)
+      'name' =>
+      string(24) "SUDADERA CUELLO CHIMENEA"
+      'url' =>
+      string(88) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-cuello-chimenea-c309502p2005056.html"
+      'extid' =>
+      string(7) "2005056"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/303/800/2/w/400/1701303800_1_1_1.jpg?ts=1409157253055"
+    }
+  }
+  [27] =>
+  class Dcompras\Item\Generic#105 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(24) "SUDADERA ABIERTA CAPUCHA"
+      'url' =>
+      string(88) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-abierta-capucha-c309502p2004386.html"
+      'extid' =>
+      string(7) "2004386"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/300/807/2/w/400/1701300807_6_1_1.jpg?ts=1403868880414"
+    }
+  }
+  [28] =>
+  class Dcompras\Item\Generic#106 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(35.95)
+      'name' =>
+      string(24) "SUDADERA CERRADA BORDADO"
+      'url' =>
+      string(88) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-cerrada-bordado-c309502p2169573.html"
+      'extid' =>
+      string(7) "2169573"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/2247/311/809/2/w/400/2247311809_1_1_1.jpg?ts=1411665067152"
+    }
+  }
+  [29] =>
+  class Dcompras\Item\Generic#107 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(24) "SUDADERA ABIERTA CAPUCHA"
+      'url' =>
+      string(88) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-abierta-capucha-c309502p2004388.html"
+      'extid' =>
+      string(7) "2004388"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/300/401/2/w/400/1701300401_1_1_1.jpg?ts=1409923197477"
+    }
+  }
+  [30] =>
+  class Dcompras\Item\Generic#108 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(25) "SUDADERA CREMALLERA MANGA"
+      'url' =>
+      string(89) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-cremallera-manga-c309502p1984138.html"
+      'extid' =>
+      string(7) "1984138"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/9240/307/401/2/w/400/9240307401_2_1_1.jpg?ts=1410524304096"
+    }
+  }
+  [31] =>
+  class Dcompras\Item\Generic#109 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(19.95)
+      'name' =>
+      string(23) "SUDADERA BASICA CERRADA"
+      'url' =>
+      string(87) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-basica-cerrada-c309502p2004395.html"
+      'extid' =>
+      string(7) "2004395"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/302/803/2/w/400/1701302803_1_1_1.jpg?ts=1413216729148"
+    }
+  }
+  [32] =>
+  class Dcompras\Item\Generic#110 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(39.95)
+      'name' =>
+      string(21) "SUDADERA CERRADA DARK"
+      'url' =>
+      string(85) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-cerrada-dark-c309502p1984041.html"
+      'extid' =>
+      string(7) "1984041"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/308/800/2/w/400/1701308800_1_1_1.jpg?ts=1409754589001"
+    }
+  }
+  [33] =>
+  class Dcompras\Item\Generic#111 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(39.95)
+      'name' =>
+      string(31) "SUDADERA  ACOLCHADA CON CAPUCHA"
+      'url' =>
+      string(94) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-acolchada-con-capucha-c309502p1983494.html"
+      'extid' =>
+      string(7) "1983494"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/6096/303/803/2/w/400/6096303803_6_1_1.jpg?ts=1409234252659"
+    }
+  }
+  [34] =>
+  class Dcompras\Item\Generic#112 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(19) "SUDADERA DENIM SOFT"
+      'url' =>
+      string(83) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-denim-soft-c309502p2206013.html"
+      'extid' =>
+      string(7) "2206013"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1501/300/407/2/w/400/1501300407_1_1_1.jpg?ts=1408714397456"
+    }
+  }
+  [35] =>
+  class Dcompras\Item\Generic#113 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(19) "SUDADERA PUNTO ROMA"
+      'url' =>
+      string(83) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-punto-roma-c309502p2056002.html"
+      'extid' =>
+      string(7) "2056002"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/0977/306/800/2/w/400/0977306800_1_1_1.jpg?ts=1410356833784"
+    }
+  }
+  [36] =>
+  class Dcompras\Item\Generic#114 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(35.95)
+      'name' =>
+      string(17) "SUDADERA GUATEADA"
+      'url' =>
+      string(81) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-guateada-c309502p1983699.html"
+      'extid' =>
+      string(7) "1983699"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/8574/365/803/2/w/400/8574365803_1_1_1.jpg?ts=1407931039289"
+    }
+  }
+  [37] =>
+  class Dcompras\Item\Generic#115 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(25.95)
+      'name' =>
+      string(24) "SUDADERA CUELLO CHIMENEA"
+      'url' =>
+      string(88) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-cuello-chimenea-c309502p2005054.html"
+      'extid' =>
+      string(7) "2005054"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/303/401/2/w/400/1701303401_1_1_1.jpg?ts=1408714487611"
+    }
+  }
+  [38] =>
+  class Dcompras\Item\Generic#116 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(25.95)
+      'name' =>
+      string(24) "SUDADERA CUELLO CHIMENEA"
+      'url' =>
+      string(88) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-cuello-chimenea-c309502p2005055.html"
+      'extid' =>
+      string(7) "2005055"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/303/803/2/w/400/1701303803_2_1_1.jpg?ts=1408714496385"
+    }
+  }
+  [39] =>
+  class Dcompras\Item\Generic#117 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(25.95)
+      'name' =>
+      string(17) "SUDADERA TÉCNICA"
+      'url' =>
+      string(85) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-t%C3%A9cnica-c309502p2004358.html"
+      'extid' =>
+      string(7) "2004358"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/8369/324/401/2/w/400/8369324401_1_1_1.jpg?ts=1408715292859"
+    }
+  }
+  [40] =>
+  class Dcompras\Item\Generic#118 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(16) "SUDADERA CERRADA"
+      'url' =>
+      string(80) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-cerrada-c309502p1984037.html"
+      'extid' =>
+      string(7) "1984037"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/304/803/2/w/400/1701304803_1_1_1.jpg?ts=1408714547843"
+    }
+  }
+  [41] =>
+  class Dcompras\Item\Generic#119 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(19.95)
+      'name' =>
+      string(23) "SUDADERA BASICA CERRADA"
+      'url' =>
+      string(87) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-basica-cerrada-c309502p2004394.html"
+      'extid' =>
+      string(7) "2004394"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/302/807/2/w/400/1701302807_1_1_1.jpg?ts=1409923234899"
+    }
+  }
+  [42] =>
+  class Dcompras\Item\Generic#120 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(35.95)
+      'name' =>
+      string(32) "SUDADERA CERRADA CAPUCHA BORDADA"
+      'url' =>
+      string(96) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-cerrada-capucha-bordada-c309502p1984038.html"
+      'extid' =>
+      string(7) "1984038"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/305/401/2/w/400/1701305401_2_1_1.jpg?ts=1408714556803"
+    }
+  }
+  [43] =>
+  class Dcompras\Item\Generic#121 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(35.95)
+      'name' =>
+      string(28) "SUDADERA SUBLIMADA CRISTALES"
+      'url' =>
+      string(92) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-sublimada-cristales-c309502p2214052.html"
+      'extid' =>
+      string(7) "2214052"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/0722/328/803/2/w/400/0722328803_1_1_1.jpg?ts=1407930116425"
+    }
+  }
+  [44] =>
+  class Dcompras\Item\Generic#122 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(49.95)
+      'name' =>
+      string(14) "SUDADERA FELPA"
+      'url' =>
+      string(78) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-felpa-c309502p2005061.html"
+      'extid' =>
+      string(7) "2005061"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/307/807/2/w/400/1701307807_6_1_1.jpg?ts=1409233409368"
+    }
+  }
+  [45] =>
+  class Dcompras\Item\Generic#123 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(35.95)
+      'name' =>
+      string(18) "CHALECO CREMALLERA"
+      'url' =>
+      string(82) "http://www.zara.com/es/es/hombre/sudaderas/chaleco-cremallera-c309502p1984045.html"
+      'extid' =>
+      string(7) "1984045"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/312/800/2/w/400/1701312800_1_1_1.jpg?ts=1407313442777"
+    }
+  }
+  [46] =>
+  class Dcompras\Item\Generic#124 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(35.95)
+      'name' =>
+      string(20) "SUDADERA MANGA LARGA"
+      'url' =>
+      string(84) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-manga-larga-c309502p1983668.html"
+      'extid' =>
+      string(7) "1983668"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/2247/305/800/2/w/400/2247305800_2_1_1.jpg?ts=1408634547007"
+    }
+  }
+  [47] =>
+  class Dcompras\Item\Generic#125 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(24) "SUDADERA BICOLOR CAPUCHA"
+      'url' =>
+      string(88) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-bicolor-capucha-c309502p2005660.html"
+      'extid' =>
+      string(7) "2005660"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/317/501/2/w/400/1701317501_1_1_1.jpg?ts=1407504894666"
+    }
+  }
+  [48] =>
+  class Dcompras\Item\Generic#126 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(39.95)
+      'name' =>
+      string(25) "SUDADERA ABIERTA JACQUARD"
+      'url' =>
+      string(89) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-abierta-jacquard-c309502p1983694.html"
+      'extid' =>
+      string(7) "1983694"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/8574/360/401/2/w/400/8574360401_1_1_1.jpg?ts=1408549880674"
+    }
+  }
+  [49] =>
+  class Dcompras\Item\Generic#127 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(19.95)
+      'name' =>
+      string(23) "SUDADERA BASICA CERRADA"
+      'url' =>
+      string(87) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-basica-cerrada-c309502p2004393.html"
+      'extid' =>
+      string(7) "2004393"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/302/401/2/w/400/1701302401_1_1_1.jpg?ts=1413216676332"
+    }
+  }
+  [50] =>
+  class Dcompras\Item\Generic#128 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(19.95)
+      'name' =>
+      string(23) "SUDADERA BASICA CERRADA"
+      'url' =>
+      string(87) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-basica-cerrada-c309502p2004396.html"
+      'extid' =>
+      string(7) "2004396"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/302/800/2/w/400/1701302800_1_1_1.jpg?ts=1413216702616"
+    }
+  }
+  [51] =>
+  class Dcompras\Item\Generic#129 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(24) "SUDADERA ABIERTA CAPUCHA"
+      'url' =>
+      string(88) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-abierta-capucha-c309502p2180002.html"
+      'extid' =>
+      string(7) "2180002"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/1701/300/250/2/w/400/1701300250_1_1_1.jpg?ts=1410263113981"
+    }
+  }
+  [52] =>
+  class Dcompras\Item\Generic#130 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(18) "SUDADERA ESTAMPADA"
+      'url' =>
+      string(82) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-estampada-c309502p2020563.html"
+      'extid' =>
+      string(7) "2020563"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/0679/304/802/2/w/400/0679304802_1_1_1.jpg?ts=1414433997216"
+    }
+  }
+  [53] =>
+  class Dcompras\Item\Generic#131 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(18) "SUDADERA ESTAMPADA"
+      'url' =>
+      string(82) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-estampada-c309502p2008009.html"
+      'extid' =>
+      string(7) "2008009"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/2/p/0679/303/250/2/w/400/0679303250_6_1_1.jpg?ts=1411978917255"
+    }
+  }
+  [54] =>
+  class Dcompras\Item\Generic#132 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(50)
+      'price' =>
+      double(25.95)
+      'name' =>
+      string(18) "SUDADERA ESTAMPADA"
+      'url' =>
+      string(82) "http://www.zara.com/es/es/hombre/sudaderas/sudadera-estampada-c309502p2516018.html"
+      'extid' =>
+      string(7) "2516018"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2015/V/0/2/p/1165/328/403/2/w/400/1165328403_1_1_1.jpg?ts=1418409096773"
+    }
+  }
+  [55] =>
+  class Dcompras\Item\Generic#133 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(24) "CAMISETA NADADORA BRILLO"
+      'url' =>
+      string(87) "http://www.zara.com/es/es/mujer/camisetas/camiseta-nadadora-brillo-c269189p2401020.html"
+      'extid' =>
+      string(7) "2401020"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0387/207/800/2/w/400/0387207800_2_1_1.jpg?ts=1417770858191"
+    }
+  }
+  [56] =>
+  class Dcompras\Item\Generic#447 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(32) "CAMISETA BOLSILLO DETALLE BRILLO"
+      'url' =>
+      string(95) "http://www.zara.com/es/es/mujer/camisetas/camiseta-bolsillo-detalle-brillo-c269189p2408542.html"
+      'extid' =>
+      string(7) "2408542"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0909/240/800/2/w/400/0909240800_2_1_1.jpg?ts=1417621611336"
+    }
+  }
+  [57] =>
+  class Dcompras\Item\Generic#452 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(35.95)
+      'name' =>
+      string(24) "CAMISETA BAJO ASIMETRICO"
+      'url' =>
+      string(87) "http://www.zara.com/es/es/mujer/camisetas/camiseta-bajo-asimetrico-c269189p2327060.html"
+      'extid' =>
+      string(7) "2327060"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0387/202/800/2/w/400/0387202800_2_2_1.jpg?ts=1416582266350"
+    }
+  }
+  [58] =>
+  class Dcompras\Item\Generic#451 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(25.95)
+      'name' =>
+      string(25) "CAMISETA LARGO POR DETRAS"
+      'url' =>
+      string(88) "http://www.zara.com/es/es/mujer/camisetas/camiseta-largo-por-detras-c269189p2315511.html"
+      'extid' =>
+      string(7) "2315511"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5584/351/800/2/w/400/5584351800_1_1_1.jpg?ts=1415377345051"
+    }
+  }
+  [59] =>
+  class Dcompras\Item\Generic#137 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(18) "TOP ESCOTE ESPALDA"
+      'url' =>
+      string(81) "http://www.zara.com/es/es/mujer/camisetas/top-escote-espalda-c269189p2408537.html"
+      'extid' =>
+      string(7) "2408537"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0909/238/800/2/w/400/0909238800_2_2_1.jpg?ts=1417541273121"
+    }
+  }
+  [60] =>
+  class Dcompras\Item\Generic#448 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(25.95)
+      'name' =>
+      string(29) "CAMISETA PUNTO FINO  BOLSILLO"
+      'url' =>
+      string(91) "http://www.zara.com/es/es/mujer/camisetas/camiseta-punto-fino-bolsillo-c269189p2329013.html"
+      'extid' =>
+      string(7) "2329013"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5410/251/812/2/w/400/5410251812_2_2_1.jpg?ts=1417621785467"
+    }
+  }
+  [61] =>
+  class Dcompras\Item\Generic#449 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(9.99)
+      'name' =>
+      string(16) "SUDADERA BÁSICA"
+      'url' =>
+      string(83) "http://www.zara.com/es/es/mujer/camisetas/sudadera-b%C3%A1sica-c269189p2192029.html"
+      'extid' =>
+      string(7) "2192029"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0264/237/803/2/w/400/0264237803_2_1_1.jpg?ts=1417770785812"
+    }
+  }
+  [62] =>
+  class Dcompras\Item\Generic#450 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(28) "CUERPO COMBINADO CREMALLERAS"
+      'url' =>
+      string(91) "http://www.zara.com/es/es/mujer/camisetas/cuerpo-combinado-cremalleras-c269189p2306026.html"
+      'extid' =>
+      string(7) "2306026"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/8186/194/401/2/w/400/8186194401_2_2_1.jpg?ts=1412348971135"
+    }
+  }
+  [63] =>
+  class Dcompras\Item\Generic#453 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(25.95)
+      'name' =>
+      string(37) "SUDADERA COMBINADA CREMALLERA ESPALDA"
+      'url' =>
+      string(100) "http://www.zara.com/es/es/mujer/camisetas/sudadera-combinada-cremallera-espalda-c269189p2200050.html"
+      'extid' =>
+      string(7) "2200050"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/7870/221/802/2/w/400/7870221802_2_1_1.jpg?ts=1410968542163"
+    }
+  }
+  [64] =>
+  class Dcompras\Item\Generic#454 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(24) "TOP COMBINADO CREMALLERA"
+      'url' =>
+      string(87) "http://www.zara.com/es/es/mujer/camisetas/top-combinado-cremallera-c269189p2306025.html"
+      'extid' =>
+      string(7) "2306025"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/1639/182/712/2/w/400/1639182712_2_1_1.jpg?ts=1413364130408"
+    }
+  }
+  [65] =>
+  class Dcompras\Item\Generic#455 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(15.95)
+      'name' =>
+      string(18) "CAMISETA MANGA 3/4"
+      'url' =>
+      string(80) "http://www.zara.com/es/es/mujer/camisetas/camiseta-manga-34-c269189p2517159.html"
+      'extid' =>
+      string(7) "2517159"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2015/V/0/1/p/5039/222/042/2/w/400/5039222042_1_1_1.jpg?ts=1418407496383"
+    }
+  }
+  [66] =>
+  class Dcompras\Item\Generic#456 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(13) "JERSEY  TEXTO"
+      'url' =>
+      string(75) "http://www.zara.com/es/es/mujer/camisetas/jersey-texto-c269189p2334559.html"
+      'extid' =>
+      string(7) "2334559"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5580/324/809/2/w/400/5580324809_2_2_1.jpg?ts=1416938740000"
+    }
+  }
+  [67] =>
+  class Dcompras\Item\Generic#457 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(25.95)
+      'name' =>
+      string(20) "CAMISETA MANGA CORTA"
+      'url' =>
+      string(83) "http://www.zara.com/es/es/mujer/camisetas/camiseta-manga-corta-c269189p2063002.html"
+      'extid' =>
+      string(7) "2063002"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/1165/229/251/2/w/400/1165229251_2_1_1.jpg?ts=1410511684533"
+    }
+  }
+  [68] =>
+  class Dcompras\Item\Generic#458 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(19.95)
+      'name' =>
+      string(18) "CAMISETA LANA FOTO"
+      'url' =>
+      string(81) "http://www.zara.com/es/es/mujer/camisetas/camiseta-lana-foto-c269189p2401016.html"
+      'extid' =>
+      string(7) "2401016"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/1165/263/724/2/w/400/1165263724_2_1_1.jpg?ts=1416938702099"
+    }
+  }
+  [69] =>
+  class Dcompras\Item\Generic#459 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(24) "CAMISETA TACHUELAS FORMA"
+      'url' =>
+      string(87) "http://www.zara.com/es/es/mujer/camisetas/camiseta-tachuelas-forma-c269189p2426006.html"
+      'extid' =>
+      string(7) "2426006"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0264/243/507/2/w/400/0264243507_1_1_1.jpg?ts=1418229388569"
+    }
+  }
+  [70] =>
+  class Dcompras\Item\Generic#460 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(15) "CAMISETA STUDIO"
+      'url' =>
+      string(78) "http://www.zara.com/es/es/mujer/camisetas/camiseta-studio-c269189p2109009.html"
+      'extid' =>
+      string(7) "2109009"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5410/243/634/2/w/400/5410243634_1_1_1.jpg?ts=1412325395216"
+    }
+  }
+  [71] =>
+  class Dcompras\Item\Generic#461 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(15.95)
+      'name' =>
+      string(14) "CAMISETA RAYAS"
+      'url' =>
+      string(77) "http://www.zara.com/es/es/mujer/camisetas/camiseta-rayas-c269189p2078014.html"
+      'extid' =>
+      string(7) "2078014"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5520/335/060/2/w/400/5520335060_1_1_1.jpg?ts=1411734066948"
+    }
+  }
+  [72] =>
+  class Dcompras\Item\Generic#462 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(35.95)
+      'name' =>
+      string(13) "BOMBER ESCOTE"
+      'url' =>
+      string(76) "http://www.zara.com/es/es/mujer/camisetas/bomber-escote-c269189p2103508.html"
+      'extid' =>
+      string(7) "2103508"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0264/233/800/2/w/400/0264233800_2_1_1.jpg?ts=1411139206718"
+    }
+  }
+  [73] =>
+  class Dcompras\Item\Generic#463 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(35.95)
+      'name' =>
+      string(14) "CHAQUETA LARGA"
+      'url' =>
+      string(77) "http://www.zara.com/es/es/mujer/camisetas/chaqueta-larga-c269189p2359533.html"
+      'extid' =>
+      string(7) "2359533"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/1551/222/800/2/w/400/1551222800_2_4_1.jpg?ts=1415805838906"
+    }
+  }
+  [74] =>
+  class Dcompras\Item\Generic#464 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(19.95)
+      'name' =>
+      string(18) "CAMISETA ESTAMPADA"
+      'url' =>
+      string(81) "http://www.zara.com/es/es/mujer/camisetas/camiseta-estampada-c269189p2327079.html"
+      'extid' =>
+      string(7) "2327079"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/1165/254/822/2/w/400/1165254822_2_1_1.jpg?ts=1415263757895"
+    }
+  }
+  [75] =>
+  class Dcompras\Item\Generic#465 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(5.95)
+      'name' =>
+      string(21) "CAMISETA TIRANTE FINO"
+      'url' =>
+      string(84) "http://www.zara.com/es/es/mujer/camisetas/camiseta-tirante-fino-c269189p2129203.html"
+      'extid' =>
+      string(7) "2129203"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0264/532/552/2/w/400/0264532552_1_1_1.jpg?ts=1418831024857"
+    }
+  }
+  [76] =>
+  class Dcompras\Item\Generic#466 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(25.95)
+      'name' =>
+      string(27) "CAMISETA ESTAMPADA APLIQUES"
+      'url' =>
+      string(90) "http://www.zara.com/es/es/mujer/camisetas/camiseta-estampada-apliques-c269189p2327058.html"
+      'extid' =>
+      string(7) "2327058"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/1165/260/800/2/w/400/1165260800_2_1_1.jpg?ts=1415804504857"
+    }
+  }
+  [77] =>
+  class Dcompras\Item\Generic#467 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(25.95)
+      'name' =>
+      string(28) "CAMISETA ABERTURAS LATERALES"
+      'url' =>
+      string(91) "http://www.zara.com/es/es/mujer/camisetas/camiseta-aberturas-laterales-c269189p2334501.html"
+      'extid' =>
+      string(7) "2334501"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5580/320/605/2/w/400/5580320605_2_1_1.jpg?ts=1416215363641"
+    }
+  }
+  [78] =>
+  class Dcompras\Item\Generic#468 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(14) "CAMISETA FELPA"
+      'url' =>
+      string(77) "http://www.zara.com/es/es/mujer/camisetas/camiseta-felpa-c269189p2118005.html"
+      'extid' =>
+      string(7) "2118005"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/1198/353/800/2/w/400/1198353800_2_1_1.jpg?ts=1415377188214"
+    }
+  }
+  [79] =>
+  class Dcompras\Item\Generic#469 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(23) "CAMISETA DELANTERO FLOR"
+      'url' =>
+      string(86) "http://www.zara.com/es/es/mujer/camisetas/camiseta-delantero-flor-c269189p2408535.html"
+      'extid' =>
+      string(7) "2408535"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0839/213/800/2/w/400/0839213800_2_1_1.jpg?ts=1416582388276"
+    }
+  }
+  [80] =>
+  class Dcompras\Item\Generic#470 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(25.95)
+      'name' =>
+      string(18) "JERSEY MANGA LARGA"
+      'url' =>
+      string(81) "http://www.zara.com/es/es/mujer/camisetas/jersey-manga-larga-c269189p2359527.html"
+      'extid' =>
+      string(7) "2359527"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/1551/220/800/2/w/400/1551220800_2_1_1.jpg?ts=1417778286519"
+    }
+  }
+  [81] =>
+  class Dcompras\Item\Generic#471 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(27) "CAMISETA JERSEY MANGA LARGA"
+      'url' =>
+      string(90) "http://www.zara.com/es/es/mujer/camisetas/camiseta-jersey-manga-larga-c269189p2189515.html"
+      'extid' =>
+      string(7) "2189515"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0909/226/615/2/w/400/0909226615_2_1_1.jpg?ts=1412347363745"
+    }
+  }
+  [82] =>
+  class Dcompras\Item\Generic#472 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(35.95)
+      'name' =>
+      string(20) "SUDADERA FELPA LARGA"
+      'url' =>
+      string(83) "http://www.zara.com/es/es/mujer/camisetas/sudadera-felpa-larga-c269189p2118003.html"
+      'extid' =>
+      string(7) "2118003"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5584/343/827/2/w/400/5584343827_1_1_1.jpg?ts=1417541396182"
+    }
+  }
+  [83] =>
+  class Dcompras\Item\Generic#473 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(23) "CAMISETA AMPLIA BICOLOR"
+      'url' =>
+      string(86) "http://www.zara.com/es/es/mujer/camisetas/camiseta-amplia-bicolor-c269189p2177526.html"
+      'extid' =>
+      string(7) "2177526"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5039/334/709/2/w/400/5039334709_2_3_1.jpg?ts=1413901012836"
+    }
+  }
+  [84] =>
+  class Dcompras\Item\Generic#474 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(19.95)
+      'name' =>
+      string(24) "CAMISETA CUELLO PANADERO"
+      'url' =>
+      string(87) "http://www.zara.com/es/es/mujer/camisetas/camiseta-cuello-panadero-c269189p2176003.html"
+      'extid' =>
+      string(7) "2176003"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0858/209/800/2/w/400/0858209800_2_9_1.jpg?ts=1408620525912"
+    }
+  }
+  [85] =>
+  class Dcompras\Item\Generic#475 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(9.99)
+      'name' =>
+      string(16) "SUDADERA BÁSICA"
+      'url' =>
+      string(83) "http://www.zara.com/es/es/mujer/camisetas/sudadera-b%C3%A1sica-c269189p2198508.html"
+      'extid' =>
+      string(7) "2198508"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0264/237/742/2/w/400/0264237742_2_2_1.jpg?ts=1409315763973"
+    }
+  }
+  [86] =>
+  class Dcompras\Item\Generic#476 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(15.95)
+      'name' =>
+      string(29) "CAMISETA SPECIAL COTTON LARGA"
+      'url' =>
+      string(92) "http://www.zara.com/es/es/mujer/camisetas/camiseta-special-cotton-larga-c269189p2176034.html"
+      'extid' =>
+      string(7) "2176034"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/1551/211/800/2/w/400/1551211800_1_1_1.jpg?ts=1409760130139"
+    }
+  }
+  [87] =>
+  class Dcompras\Item\Generic#477 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(25.95)
+      'name' =>
+      string(20) "SUDADERA CUELLO PICO"
+      'url' =>
+      string(83) "http://www.zara.com/es/es/mujer/camisetas/sudadera-cuello-pico-c269189p2096002.html"
+      'extid' =>
+      string(7) "2096002"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5520/337/401/2/w/400/5520337401_2_4_1.jpg?ts=1412769301089"
+    }
+  }
+  [88] =>
+  class Dcompras\Item\Generic#478 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(18) "CAMISETA ESTAMPADA"
+      'url' =>
+      string(81) "http://www.zara.com/es/es/mujer/camisetas/camiseta-estampada-c269189p2327008.html"
+      'extid' =>
+      string(7) "2327008"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/1165/259/800/2/w/400/1165259800_1_1_1.jpg?ts=1414693880397"
+    }
+  }
+  [89] =>
+  class Dcompras\Item\Generic#479 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(27) "JERSEY PUNTO FINO COMBINADO"
+      'url' =>
+      string(90) "http://www.zara.com/es/es/mujer/camisetas/jersey-punto-fino-combinado-c269189p2336530.html"
+      'extid' =>
+      string(7) "2336530"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0909/236/800/2/w/400/0909236800_2_1_1.jpg?ts=1415804459516"
+    }
+  }
+  [90] =>
+  class Dcompras\Item\Generic#480 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(14) "CAMISETA FELPA"
+      'url' =>
+      string(77) "http://www.zara.com/es/es/mujer/camisetas/camiseta-felpa-c269189p2207001.html"
+      'extid' =>
+      string(7) "2207001"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5520/334/401/2/w/400/5520334401_1_1_1.jpg?ts=1412359273729"
+    }
+  }
+  [91] =>
+  class Dcompras\Item\Generic#481 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(14) "CAMISETA FELPA"
+      'url' =>
+      string(77) "http://www.zara.com/es/es/mujer/camisetas/camiseta-felpa-c269189p2207002.html"
+      'extid' =>
+      string(7) "2207002"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5520/334/827/2/w/400/5520334827_1_1_1.jpg?ts=1417771338858"
+    }
+  }
+  [92] =>
+  class Dcompras\Item\Generic#482 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(33) "CAMISETA DETALLE STRASS COMBINADA"
+      'url' =>
+      string(96) "http://www.zara.com/es/es/mujer/camisetas/camiseta-detalle-strass-combinada-c269189p2334534.html"
+      'extid' =>
+      string(7) "2334534"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5580/331/723/2/w/400/5580331723_1_1_1.jpg?ts=1415199911015"
+    }
+  }
+  [93] =>
+  class Dcompras\Item\Generic#483 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(23) "CAMISETA AMPLIA BICOLOR"
+      'url' =>
+      string(86) "http://www.zara.com/es/es/mujer/camisetas/camiseta-amplia-bicolor-c269189p2177527.html"
+      'extid' =>
+      string(7) "2177527"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5039/334/811/2/w/400/5039334811_2_1_1.jpg?ts=1416830865890"
+    }
+  }
+  [94] =>
+  class Dcompras\Item\Generic#484 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(20) "CAMISETA ASIMÉTRICA"
+      'url' =>
+      string(87) "http://www.zara.com/es/es/mujer/camisetas/camiseta-asim%C3%A9trica-c269189p2172501.html"
+      'extid' =>
+      string(7) "2172501"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0858/207/251/2/w/400/0858207251_2_6_1.jpg?ts=1411739358487"
+    }
+  }
+  [95] =>
+  class Dcompras\Item\Generic#485 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(18) "CAMISETA ESTAMPADA"
+      'url' =>
+      string(81) "http://www.zara.com/es/es/mujer/camisetas/camiseta-estampada-c269189p2327009.html"
+      'extid' =>
+      string(7) "2327009"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/1165/258/064/2/w/400/1165258064_2_1_1.jpg?ts=1415815964515"
+    }
+  }
+  [96] =>
+  class Dcompras\Item\Generic#486 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(27) "CAMISETA JERSEY MANGA LARGA"
+      'url' =>
+      string(90) "http://www.zara.com/es/es/mujer/camisetas/camiseta-jersey-manga-larga-c269189p2180026.html"
+      'extid' =>
+      string(7) "2180026"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0909/226/422/2/w/400/0909226422_1_1_1.jpg?ts=1412347350153"
+    }
+  }
+  [97] =>
+  class Dcompras\Item\Generic#487 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(14) "CAMISETA CUPRO"
+      'url' =>
+      string(77) "http://www.zara.com/es/es/mujer/camisetas/camiseta-cupro-c269189p2180074.html"
+      'extid' =>
+      string(7) "2180074"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0909/224/507/2/w/400/0909224507_1_1_1.jpg?ts=1409156384045"
+    }
+  }
+  [98] =>
+  class Dcompras\Item\Generic#488 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(30) "CAMISETA ALGODÓN BASIC & SOFT"
+      'url' =>
+      string(97) "http://www.zara.com/es/es/mujer/camisetas/camiseta-algod%C3%B3n-basic---soft-c269189p2180036.html"
+      'extid' =>
+      string(7) "2180036"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0909/227/926/2/w/400/0909227926_1_1_1.jpg?ts=1406134993565"
+    }
+  }
+  [99] =>
+  class Dcompras\Item\Generic#489 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(12.95)
+      'name' =>
+      string(25) "CAMISETA ALGODÓN MENSAJE"
+      'url' =>
+      string(92) "http://www.zara.com/es/es/mujer/camisetas/camiseta-algod%C3%B3n-mensaje-c269189p2103514.html"
+      'extid' =>
+      string(7) "2103514"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0264/226/250/2/w/400/0264226250_1_1_1.jpg?ts=1408535048082"
+    }
+  }
+  [100] =>
+  class Dcompras\Item\Generic#490 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(14) "CAMISETA FELPA"
+      'url' =>
+      string(77) "http://www.zara.com/es/es/mujer/camisetas/camiseta-felpa-c269189p2096003.html"
+      'extid' =>
+      string(7) "2096003"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5520/336/401/2/w/400/5520336401_1_1_1.jpg?ts=1413534641001"
+    }
+  }
+  [101] =>
+  class Dcompras\Item\Generic#491 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(30) "CAMISETA ALGODÓN BASIC & SOFT"
+      'url' =>
+      string(97) "http://www.zara.com/es/es/mujer/camisetas/camiseta-algod%C3%B3n-basic---soft-c269189p2180035.html"
+      'extid' =>
+      string(7) "2180035"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0909/227/250/2/w/400/0909227250_1_1_1.jpg?ts=1406134941877"
+    }
+  }
+  [102] =>
+  class Dcompras\Item\Generic#492 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(9.95)
+      'name' =>
+      string(14) "CAMISETA TEXTO"
+      'url' =>
+      string(77) "http://www.zara.com/es/es/mujer/camisetas/camiseta-texto-c269189p2222005.html"
+      'extid' =>
+      string(7) "2222005"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/1551/217/800/2/w/400/1551217800_2_1_1.jpg?ts=1409760150530"
+    }
+  }
+  [103] =>
+  class Dcompras\Item\Generic#493 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(25) "CAMISETA APLIQUE POLIPIEL"
+      'url' =>
+      string(88) "http://www.zara.com/es/es/mujer/camisetas/camiseta-aplique-polipiel-c269189p2333525.html"
+      'extid' =>
+      string(7) "2333525"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0264/239/812/2/w/400/0264239812_1_1_1.jpg?ts=1413988912976"
+    }
+  }
+  [104] =>
+  class Dcompras\Item\Generic#494 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(25) "CAMISETA CANALÉ RANGLÁN"
+      'url' =>
+      string(96) "http://www.zara.com/es/es/mujer/camisetas/camiseta-canal%C3%A9-rangl%C3%A1n-c269189p2104023.html"
+      'extid' =>
+      string(7) "2104023"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0264/227/251/2/w/400/0264227251_1_1_1.jpg?ts=1410967176440"
+    }
+  }
+  [105] =>
+  class Dcompras\Item\Generic#495 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(9.99)
+      'name' =>
+      string(16) "SUDADERA BÁSICA"
+      'url' =>
+      string(83) "http://www.zara.com/es/es/mujer/camisetas/sudadera-b%C3%A1sica-c269189p2192031.html"
+      'extid' =>
+      string(7) "2192031"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0264/237/822/2/w/400/0264237822_2_2_1.jpg?ts=1417772847358"
+    }
+  }
+  [106] =>
+  class Dcompras\Item\Generic#496 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(25) "CAMISETA CANALÉ RANGLÁN"
+      'url' =>
+      string(96) "http://www.zara.com/es/es/mujer/camisetas/camiseta-canal%C3%A9-rangl%C3%A1n-c269189p2196504.html"
+      'extid' =>
+      string(7) "2196504"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0264/227/742/2/w/400/0264227742_1_1_1.jpg?ts=1410967224964"
+    }
+  }
+  [107] =>
+  class Dcompras\Item\Generic#497 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(25) "CAMISETA CANALÉ RANGLÁN"
+      'url' =>
+      string(96) "http://www.zara.com/es/es/mujer/camisetas/camiseta-canal%C3%A9-rangl%C3%A1n-c269189p2196505.html"
+      'extid' =>
+      string(7) "2196505"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0264/227/800/2/w/400/0264227800_2_1_1.jpg?ts=1410967239429"
+    }
+  }
+  [108] =>
+  class Dcompras\Item\Generic#498 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(19.95)
+      'name' =>
+      string(32) "JERSEY CUELLO CISNE MANGA PONCHO"
+      'url' =>
+      string(95) "http://www.zara.com/es/es/mujer/camisetas/jersey-cuello-cisne-manga-poncho-c269189p2197509.html"
+      'extid' =>
+      string(7) "2197509"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5410/246/800/2/w/400/5410246800_2_1_1.jpg?ts=1414595979659"
+    }
+  }
+  [109] =>
+  class Dcompras\Item\Generic#499 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(30) "CAMISETA ALGODÓN BASIC & SOFT"
+      'url' =>
+      string(97) "http://www.zara.com/es/es/mujer/camisetas/camiseta-algod%C3%B3n-basic---soft-c269189p2180037.html"
+      'extid' =>
+      string(7) "2180037"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0909/227/822/2/w/400/0909227822_1_1_1.jpg?ts=1406134966057"
+    }
+  }
+  [110] =>
+  class Dcompras\Item\Generic#500 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(14) "CAMISETA FELPA"
+      'url' =>
+      string(77) "http://www.zara.com/es/es/mujer/camisetas/camiseta-felpa-c269189p2079518.html"
+      'extid' =>
+      string(7) "2079518"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5520/334/070/2/w/400/5520334070_2_2_1.jpg?ts=1412756023430"
+    }
+  }
+  [111] =>
+  class Dcompras\Item\Generic#501 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(20) "CAMISETA CUELLO PICO"
+      'url' =>
+      string(83) "http://www.zara.com/es/es/mujer/camisetas/camiseta-cuello-pico-c269189p2334503.html"
+      'extid' =>
+      string(7) "2334503"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/1198/355/823/2/w/400/1198355823_1_1_1.jpg?ts=1415199407442"
+    }
+  }
+  [112] =>
+  class Dcompras\Item\Generic#502 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(24) "JERSEY PUNTO FINO DIBUJO"
+      'url' =>
+      string(87) "http://www.zara.com/es/es/mujer/camisetas/jersey-punto-fino-dibujo-c269189p2334560.html"
+      'extid' =>
+      string(7) "2334560"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5580/338/809/2/w/400/5580338809_2_3_1.jpg?ts=1416422814286"
+    }
+  }
+  [113] =>
+  class Dcompras\Item\Generic#503 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(25.95)
+      'name' =>
+      string(0) ""
+      'url' =>
+      string(47) "http://www.zara.com/es/es/-c269189p2334511.html"
+      'extid' =>
+      string(7) "2334511"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5580/325/251/2/w/400/5580325251_2_3_1.jpg?ts=1417541338876"
+    }
+  }
+  [114] =>
+  class Dcompras\Item\Generic#504 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(19.95)
+      'name' =>
+      string(13) "CAMISETA FOTO"
+      'url' =>
+      string(76) "http://www.zara.com/es/es/mujer/camisetas/camiseta-foto-c269189p2401030.html"
+      'extid' =>
+      string(7) "2401030"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/1165/264/828/2/w/400/1165264828_2_2_1.jpg?ts=1416938709616"
+    }
+  }
+  [115] =>
+  class Dcompras\Item\Generic#505 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(9.95)
+      'name' =>
+      string(18) "CAMISETA ESTAMPADA"
+      'url' =>
+      string(81) "http://www.zara.com/es/es/mujer/camisetas/camiseta-estampada-c269189p2408526.html"
+      'extid' =>
+      string(7) "2408526"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/1259/270/835/2/w/400/1259270835_1_1_1.jpg?ts=1416424234972"
+    }
+  }
+  [116] =>
+  class Dcompras\Item\Generic#506 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(14) "CAMISETA TEXTO"
+      'url' =>
+      string(77) "http://www.zara.com/es/es/mujer/camisetas/camiseta-texto-c269189p2334516.html"
+      'extid' =>
+      string(7) "2334516"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5580/323/401/2/w/400/5580323401_2_2_1.jpg?ts=1414694416285"
+    }
+  }
+  [117] =>
+  class Dcompras\Item\Generic#507 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(19.95)
+      'name' =>
+      string(13) "CAMISETA FOTO"
+      'url' =>
+      string(76) "http://www.zara.com/es/es/mujer/camisetas/camiseta-foto-c269189p2327075.html"
+      'extid' =>
+      string(7) "2327075"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/1165/262/812/2/w/400/1165262812_2_3_1.jpg?ts=1415377152691"
+    }
+  }
+  [118] =>
+  class Dcompras\Item\Generic#508 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(15.95)
+      'name' =>
+      string(17) "CAMISETA MUÑECAS"
+      'url' =>
+      string(84) "http://www.zara.com/es/es/mujer/camisetas/camiseta-mu%C3%B1ecas-c269189p2332502.html"
+      'extid' =>
+      string(7) "2332502"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5644/259/401/2/w/400/5644259401_2_1_1.jpg?ts=1415377356346"
+    }
+  }
+  [119] =>
+  class Dcompras\Item\Generic#509 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(17.95)
+      'name' =>
+      string(23) "CAMISETA VIVOS POLIPIEL"
+      'url' =>
+      string(86) "http://www.zara.com/es/es/mujer/camisetas/camiseta-vivos-polipiel-c269189p2334515.html"
+      'extid' =>
+      string(7) "2334515"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5580/333/401/2/w/400/5580333401_2_1_1.jpg?ts=1415383971642"
+    }
+  }
+  [120] =>
+  class Dcompras\Item\Generic#510 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(19.95)
+      'name' =>
+      string(23) "CAMISETA ESCOTE ESPALDA"
+      'url' =>
+      string(86) "http://www.zara.com/es/es/mujer/camisetas/camiseta-escote-espalda-c269189p2334562.html"
+      'extid' =>
+      string(7) "2334562"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5580/336/809/2/w/400/5580336809_2_1_1.jpg?ts=1415365301731"
+    }
+  }
+  [121] =>
+  class Dcompras\Item\Generic#511 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(29) "CAMISETA PUNTO FINO COMBINADO"
+      'url' =>
+      string(92) "http://www.zara.com/es/es/mujer/camisetas/camiseta-punto-fino-combinado-c269189p2338509.html"
+      'extid' =>
+      string(7) "2338509"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5580/321/812/2/w/400/5580321812_2_1_1.jpg?ts=1417026245766"
+    }
+  }
+  [122] =>
+  class Dcompras\Item\Generic#512 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(29.95)
+      'name' =>
+      string(27) "SUDADERA EXTRALARGA CAPUCHA"
+      'url' =>
+      string(90) "http://www.zara.com/es/es/mujer/camisetas/sudadera-extralarga-capucha-c269189p2334541.html"
+      'extid' =>
+      string(7) "2334541"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0264/240/800/2/w/400/0264240800_2_2_1.jpg?ts=1413988929863"
+    }
+  }
+  [123] =>
+  class Dcompras\Item\Generic#513 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(15.95)
+      'name' =>
+      string(18) "CAMISETA ESTAMPADO"
+      'url' =>
+      string(81) "http://www.zara.com/es/es/mujer/camisetas/camiseta-estampado-c269189p2342510.html"
+      'extid' =>
+      string(7) "2342510"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5580/293/251/2/w/400/5580293251_1_1_1.jpg?ts=1415985037177"
+    }
+  }
+  [124] =>
+  class Dcompras\Item\Generic#514 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(19.95)
+      'name' =>
+      string(18) "CAMISETA ESTAMPADA"
+      'url' =>
+      string(81) "http://www.zara.com/es/es/mujer/camisetas/camiseta-estampada-c269189p2334561.html"
+      'extid' =>
+      string(7) "2334561"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/5580/337/809/2/w/400/5580337809_1_1_1.jpg?ts=1414694499960"
+    }
+  }
+  [125] =>
+  class Dcompras\Item\Generic#515 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(19.95)
+      'name' =>
+      string(21) "CAMISETA ANIMAL PRINT"
+      'url' =>
+      string(84) "http://www.zara.com/es/es/mujer/camisetas/camiseta-animal-print-c269189p2327004.html"
+      'extid' =>
+      string(7) "2327004"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/1165/252/051/2/w/400/1165252051_2_1_1.jpg?ts=1414595155343"
+    }
+  }
+  [126] =>
+  class Dcompras\Item\Generic#516 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(15.95)
+      'name' =>
+      string(18) "CAMISETA ESTAMPADA"
+      'url' =>
+      string(81) "http://www.zara.com/es/es/mujer/camisetas/camiseta-estampada-c269189p2336534.html"
+      'extid' =>
+      string(7) "2336534"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0909/232/803/2/w/400/0909232803_2_1_1.jpg?ts=1414690778926"
+    }
+  }
+  [127] =>
+  class Dcompras\Item\Generic#517 (1) {
+    private $_aAttrs =>
+    array(7) {
+      'shopid' =>
+      int(20)
+      'catid' =>
+      int(30)
+      'price' =>
+      double(22.95)
+      'name' =>
+      string(22) "JERSEY TEXTO DELANTERO"
+      'url' =>
+      string(85) "http://www.zara.com/es/es/mujer/camisetas/jersey-texto-delantero-c269189p2334543.html"
+      'extid' =>
+      string(7) "2334543"
+      'imgcusurl' =>
+      string(97) "//static.zara.net/photos//2014/I/0/1/p/0264/241/800/2/w/400/0264241800_2_1_1.jpg?ts=1414164998152"
+    }
+  }
+
+  (more elements)...
+}
