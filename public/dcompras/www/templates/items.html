@@ -1,0 +1,16 @@
+<ion-view view-title="Productos">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item item-thumbnail-left" ng-repeat="item in items" href="#/app/item/{{item.id}}">
+      	<img ng-src="/proxy/http://local.dcompras/resource/image/id/{{item.extid}}">
+        <h2>{{item.name}}</h2>
+        <p>{{item.price}} EUR - {{t.translate(item.categoryname)}}</p>
+        <p>{{item.storename}}</p>
+      </ion-item>
+    </ion-list>
+	  <ion-infinite-scroll
+	    on-infinite="loadMore()"
+	    distance="1%">
+	  </ion-infinite-scroll>
+  </ion-content>
+</ion-view>

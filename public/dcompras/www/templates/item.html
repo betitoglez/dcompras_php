@@ -1,0 +1,20 @@
+<ion-view view-title="{{selectedItem.name}}">
+  <ion-content>
+    <h1>{{selectedItem.name}}</h1>
+    <img ng-src="http://local.dcompras/resource/image/id/{{selectedItem.extid}}-large" ng-click="openModal()"/>    
+  </ion-content>
+</ion-view>
+
+<!--  Modal View -->
+
+<script id="modal-image.html" type="text/ng-template">
+  <ion-modal-view>
+    <ion-header-bar>
+      <h1 class="title">{{selectedItem.name}}</h1>
+    </ion-header-bar>
+    <ion-content>
+      	<img ng-src="{{selectedItem.image}}" /> 
+    </ion-content>
+  </ion-modal-view>
+</script>
+
