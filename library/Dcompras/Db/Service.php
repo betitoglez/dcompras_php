@@ -44,7 +44,7 @@ class Service {
 	{
 		$sSql = "SELECT * FROM stores order by name";
 		
-		$aResult = $this->adapter->fetchAssoc($sSql);
+		$aResult = $this->adapter->fetchAll($sSql);
 		
 		return $aResult;
 		
@@ -77,7 +77,8 @@ class Service {
 				}
 				
 				else if ($key == "id_category" && is_numeric($value)){
-					$oSelect->where("B.id_category = ?" , intval($value));
+					$oSelect->where("B.id_category = ? OR D.parent_id = ?" , intval($value));
+					
 				}
 				else if ($key == "id_store" && is_numeric($value)){
 					$oSelect->where("products.id_store = ?" , intval($value));

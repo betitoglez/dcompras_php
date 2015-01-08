@@ -5,14 +5,10 @@
 	    <div class="input-label">
 	      Tiendas
 	    </div>
-	    <!-- 
-	    <select ng-model="storesModel" ng-options="store.name for store in stores track by store.id">
+
+	    <select ng-model="storesModel" ng-options="store.name for store in stores track by store.id" name='slc-stores'>
 	    </select>
-	    -->
-	    
-	    <select ng-model="foo" ng-change="changedStore()" name="slc-stores">
-		   <option ng-repeat="store in stores" value="{{store.id}}">{{store.name}}</option>
-		</select>
+	  
 	   </label>
 	</div>
 	
@@ -21,7 +17,7 @@
 	    <div class="input-label">
 	      Categorias
 	    </div>
-	    <select ng-model="categoriesModel" ng-options="category.name for category in categories track by category.id">
+	    <select ng-model="categoriesModel" ng-options="category.name for category in categories track by category.id" name='slc-categories'>
 	    </select>
 	   </label>
 	</div>

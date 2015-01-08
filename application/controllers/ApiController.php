@@ -32,7 +32,16 @@ class ApiController extends Zend_Controller_Action {
 		if ($this->_request->has("id_store") && is_numeric($this->_request->get("id_store"))){
 			$aFilters["id_store"] = (int) $this->_request->get("id_store");
 		}
-		$aProducts = DI::get("Db")->products($aFilters);
+		if ($this->_request->has("id_category") && is_numeric($this->_request->get("id_category"))){
+			$aFilters["id_category"] = (int) $this->_request->get("id_category");
+		}
+		if ($this->_request->has("offset") && is_numeric($this->_request->get("offset"))){
+			$offset = (int) $this->_request->get("offset");
+		}else{
+			$offset = 0;
+		}
+		
+		$aProducts = DI::get("Db")->products($aFilters,20,$offset);
 		$this->view->products = $aProducts;
 	}
 	

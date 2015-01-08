@@ -7,8 +7,16 @@
 angular.module('starter', ['ionic', 'starter.controllers'])
 .factory("Global",function(){
 	
+	var _imageUrl = function () {
+		if (navigator.connection){
+			return "/proxy/http://local.dcompras/resource/image/id/";
+		} else {
+			return "http://local.dcompras/resource/image/id/";
+		}
+	};
 	return  {
-		 url : "http://local.dcompras"
+		 url : "http://local.dcompras" ,
+		 imageUrl : _imageUrl()
 	};
 })
 .factory ("i18",function(){

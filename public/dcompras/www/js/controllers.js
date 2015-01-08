@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope,$http, $ionicModal, $timeout, Global,i18,$ionicLoading) {
+.controller('AppCtrl', function($scope,$http, $ionicModal, $timeout, Global,i18,$ionicLoading,$location) {
 	//Translate module
 	$scope.t = i18;
 	
@@ -8,6 +8,11 @@ angular.module('starter.controllers', [])
 	$scope.showLoading = function() {$ionicLoading.show({
 	      template: i18.translate("CARGANDO")
 	});};
+	
+	//Offset
+	$scope.offset = 0;
+	$scope.finished = false;
+	
 	$scope.showLoading();
 	
 	$http.get(Global.url + "/api/stores").success(function(data){
@@ -48,39 +53,48 @@ angular.module('starter.controllers', [])
 		$ionicLoading.hide();
 	});
 
+    $scope.params = "";
     
     $scope.refresh = function (){
-    	var _params = "";
+    	$scope.offset = 0;
+    	$scope.finished = false;
     	$scope.showLoading();
-    	$http.get(Global.url + "/api/products?").success(function(data){
+    	var _params = "";
+    	var _id = $("select[name='slc-stores'] option:selected").val();
+    	if (_id != "0"){
+    		_params += "id_store="+_id+"&";
+    	}
+    	_id = $("select[name='slc-categories'] option:selected").val();
+    	if (_id != "0"){
+    		_params += "id_category="+_id+"&";
+    	}
+    	
+    	
+    	$scope.params = _params;
+    	$location.path("/app/items");
+    	$http.get(Global.url + "/api/products?"+_params).success(function(data){
+    		if (data.length < 20){
+    			$scope.finished = true;
+    		}
     		$scope.items = data;
     		$ionicLoading.hide();
     	});
     };
     
-    $scope.changedStore = function (){
-    	console.log(angular.element("select[name='slc-stores'] option:selected").val());
-    };
+    $scope.imageUrl = Global.imageUrl;
     
     $scope.loadMore = function () {
-		/*
-		 console.log("Recarga");
-		 console.log($scope.playlists);
-		 $scope.playlists.push([{name:"Prueba" , id:212}]);
-		 
-		 if ($scope.items.push){
-			 
-			 $scope.items.push({"2":{"id":"2","name":"MARCA B\u00c1SICA SUDADERA","extid":"30-12082458","price":"27.95","image":"http:\/\/demandware.edgesuite.net\/sits_pod17\/dw\/image\/v2\/AAGB_PRD\/on\/demandware.static\/Sites-ROE-Site\/","url":"http:\/\/jackjones.com\/jack-jones\/sweat\/levy-sweat-hood\/12082458,es_ES,pd.html?dwvar_12082458_colorPattern=12082458_Black_438558&forceScope=","date_created":"2015-01-04 23:22:25","id_store":"30","id_product":"2","id_category":"52"}});
-		 }
-		 if (false === $scope.items instanceof Array){
-			 console.log("vegi");
-			 $scope.items["999"] =  {id : 999 , name : "Marca de prueba"};
-			 $scope.items = {};
-			 console.log($scope.items);
-		 }
-		 */
-   
-		 $scope.$broadcast('scroll.infiniteScrollComplete');
+    	$scope.offset += 20;
+    	var _params = $scope.params + "offset=" + $scope.offset;
+    	$http.get(Global.url + "/api/products?"+_params).success(function(data){
+    		if (data.length < 20){
+    			$scope.finished = true;
+    		}
+    		$scope.items = $scope.items.concat(data);
+    		$ionicLoading.hide();
+    		$scope.$broadcast('scroll.infiniteScrollComplete');
+    	});
+		
 		 
 	};
 	
@@ -126,5 +140,10 @@ angular.module('starter.controllers', [])
 		}
 	}
 	$scope.selectedItem = $scope.items[selectedId];
+	
+	$scope.openUrl = function ()
+	{
+		window.open($scope.selectedItem.url,'_system');
+	};
 	
 });

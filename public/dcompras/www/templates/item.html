@@ -1,7 +1,15 @@
 <ion-view view-title="{{selectedItem.name}}">
   <ion-content>
-    <h1>{{selectedItem.name}}</h1>
-    <img ng-src="http://local.dcompras/resource/image/id/{{selectedItem.extid}}-large" ng-click="openModal()"/>    
+    <div class="row responsive-sm">
+	  <div class="col"> <h1>{{selectedItem.name}}</h1></div>
+	  <div class="col"><img ng-src="{{imageUrl}}{{selectedItem.extid}}-large" ng-click="openModal()"/>  </div>
+	  <div class="col"><button ng-click="openUrl()" class="button icon-left ion-bag button-positive">Ver en tienda</button> </div>
+	  <div class="col">.col</div>
+	</div>
+    
+   
+     
+    
   </ion-content>
 </ion-view>
 
