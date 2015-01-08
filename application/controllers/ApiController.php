@@ -28,7 +28,11 @@ class ApiController extends Zend_Controller_Action {
 	}
 	
 	public function productsAction () {
-		$aProducts = DI::get("Db")->products(array("price_min"=>"19.90", "price_max"=>"29.99"));
+		$aFilters = array();
+		if ($this->_request->has("id_store") && is_numeric($this->_request->get("id_store"))){
+			$aFilters["id_store"] = (int) $this->_request->get("id_store");
+		}
+		$aProducts = DI::get("Db")->products($aFilters);
 		$this->view->products = $aProducts;
 	}
 	

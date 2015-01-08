@@ -124,7 +124,7 @@ abstract class Shop {
     	$oImage->resizeTo(150, null,"maxwidth");
     	$oImage->saveImage(IMAGES_PATH."/".$name."-large.png");
     	
-    	$oImage->resizeTo(50, null,"maxwidth");
+    	$oImage->resizeTo(100, null,"maxwidth");
     	$oImage->saveImage(IMAGES_PATH."/".$name.".png");
     	
     	$oImage->destroyOldImage();

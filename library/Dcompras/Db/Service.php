@@ -42,7 +42,7 @@ class Service {
 	
 	public function stores ()
 	{
-		$sSql = "SELECT * FROM stores";
+		$sSql = "SELECT * FROM stores order by name";
 		
 		$aResult = $this->adapter->fetchAssoc($sSql);
 		
@@ -134,6 +134,7 @@ class Service {
 				"image"=> $oItem->imgcusurl,
 				"price"=> $oItem->price,
 				"extid"=> $oItem->extid ,
+				"date_updated" => date("Y-m-d H:i:s"),
 				"name"=> $oItem->name
 			), array("extid = ?"=>$oItem->extid));
 		}

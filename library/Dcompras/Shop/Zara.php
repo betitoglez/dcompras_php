@@ -62,6 +62,7 @@ final class Zara extends Shop {
 		
 		$img = isset($this->_itemSelector->select("img.product-img")[0]["attributes"]["data-src"])?$this->_itemSelector->select("img.product-img")[0]["attributes"]["data-src"]:null;
 		
+		$img = "http:".$img ;
 		
 		$oGen->price = $price;
 		$oGen->name  = utf8_decode($name);
@@ -70,7 +71,7 @@ final class Zara extends Shop {
 		$oGen->imgcusurl = $img;
 		
 		//Save the image url + name
-		$this->saveImage("http:".$img ,$oGen->extid);
+		$this->saveImage($img ,$oGen->extid);
 			
 		return $oGen;	
 	}
