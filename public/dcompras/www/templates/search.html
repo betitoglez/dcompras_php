@@ -5,8 +5,14 @@
 	    <div class="input-label">
 	      Tiendas
 	    </div>
+	    <!-- 
 	    <select ng-model="storesModel" ng-options="store.name for store in stores track by store.id">
 	    </select>
+	    -->
+	    
+	    <select ng-model="foo" ng-change="changedStore()" name="slc-stores">
+		   <option ng-repeat="store in stores" value="{{store.id}}">{{store.name}}</option>
+		</select>
 	   </label>
 	</div>
 	
@@ -32,7 +38,7 @@
 	  </label>
 	</div>
 	
-	<button class="button button-block button-positive icon-left ion-navicon-round">
+	<button ng-click="refresh()" class="button button-block button-positive icon-left ion-navicon-round">
 	  Filtrar
 	</button>
   </ion-content>

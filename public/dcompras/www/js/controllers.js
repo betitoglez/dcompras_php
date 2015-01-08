@@ -5,9 +5,10 @@ angular.module('starter.controllers', [])
 	$scope.t = i18;
 	
 	//Loading
-	$ionicLoading.show({
+	$scope.showLoading = function() {$ionicLoading.show({
 	      template: i18.translate("CARGANDO")
-	});
+	});};
+	$scope.showLoading();
 	
 	$http.get(Global.url + "/api/stores").success(function(data){
 		$scope.stores = [{id:0,name:"Todas"}];
@@ -25,7 +26,7 @@ angular.module('starter.controllers', [])
 		$scope.categoriesModel = $scope.categories[0];
 	});
     $scope.stores = [{id:0,name:"Cargando tiendas..."}];
-    $scope.storesModel = $scope.stores[0];
+    //$scope.storesModel = $scope.stores[0];
     
     $scope.categories = [{id:0,name:"Cargando categorias..."}];
     $scope.categoriesModel = $scope.categories[0];
@@ -46,6 +47,20 @@ angular.module('starter.controllers', [])
 		$scope.items = data;
 		$ionicLoading.hide();
 	});
+
+    
+    $scope.refresh = function (){
+    	var _params = "";
+    	$scope.showLoading();
+    	$http.get(Global.url + "/api/products?").success(function(data){
+    		$scope.items = data;
+    		$ionicLoading.hide();
+    	});
+    };
+    
+    $scope.changedStore = function (){
+    	console.log(angular.element("select[name='slc-stores'] option:selected").val());
+    };
     
     $scope.loadMore = function () {
 		/*
