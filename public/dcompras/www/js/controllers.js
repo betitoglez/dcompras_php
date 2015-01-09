@@ -68,6 +68,12 @@ angular.module('starter.controllers', [])
     	if (_id != "0"){
     		_params += "id_category="+_id+"&";
     	}
+    	console.log($scope.frmFilter.iMinprice);
+    	if ($scope.minPrice)
+    		_params += "price_min="+$scope.minPrice+"&";
+    	
+    	if ($scope.maxPrice)
+    		_params += "price_max="+$scope.maxPrice+"&";
     	
     	
     	$scope.params = _params;

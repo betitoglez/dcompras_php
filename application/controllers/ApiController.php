@@ -35,6 +35,20 @@ class ApiController extends Zend_Controller_Action {
 		if ($this->_request->has("id_category") && is_numeric($this->_request->get("id_category"))){
 			$aFilters["id_category"] = (int) $this->_request->get("id_category");
 		}
+		
+		if ($this->_request->has("price_min") && is_numeric($this->_request->get("price_min"))){
+			$aFilters["price_min"] = floatval($this->_request->get("price_min"));
+		}
+		
+		if ($this->_request->has("price_max") && is_numeric($this->_request->get("price_max"))){
+			$aFilters["price_max"] = floatval($this->_request->get("price_max"));
+		}
+		
+		if ($this->_request->has("name")){
+			$aFilters["name"] = htmlentities($this->_request->get("name"));
+		}
+		
+		
 		if ($this->_request->has("offset") && is_numeric($this->_request->get("offset"))){
 			$offset = (int) $this->_request->get("offset");
 		}else{

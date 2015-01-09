@@ -21,7 +21,7 @@ final class JackJones extends Shop {
 			"url" => "http://jackjones.com/shop/sudaderas/jj-shop-sweatshirts,es_ES,sc.html?sz=12&format=ajax&" //Añadir start=XX
 		)		,
 		
-		32 => array(
+		27 => array(
 			"url" => "http://jackjones.com/shop/camisas/jj-shop-shirts,es_ES,sc.html?prefn1=qualifying-promotion-id&prefv1=searchfake-hidemarkdowns&prefn2=scopeFilter&prefv2=default&sz=12&forceScope=&parameterpaging=true&format=ajax&productsperrow=3&" //Añadir start=XX
 		)		,	 
 	);

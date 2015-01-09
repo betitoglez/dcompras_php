@@ -9,6 +9,18 @@ class Categories extends Mapping {
 	
 	protected $_aMap = array(
 		"maps" => array(
+				25 => array(
+						"name" => "CAMISAS",
+						"parent" => null
+				) ,
+				26 => array(
+						"name" => "CAMISAS_MUJER",
+						"parent" => 25
+				) ,
+				27 => array(
+						"name" => "CAMISAS_HOMBRE",
+						"parent" => 25
+				) ,
 				30 => array(
 						"name" => "CAMISETAS",
 						"parent" => null

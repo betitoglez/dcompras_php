@@ -1,5 +1,6 @@
 <ion-view view-title="Filtrar">
   <ion-content>
+    <form name="frmFilter">
      <div class="list list-inset">
 	   <label class="item item-input item-select">
 	    <div class="input-label">
@@ -30,12 +31,15 @@
 	
 	<div class="list list-inset">
 	  <label class="item item-input">
-	    <input type="number" placeholder="Precio minimo" ng-model="minPrice" step="0.1">
+	    <input name="iMinprice" type="number" placeholder="Precio minimo" ng-model="minPrice" step="0.1">
 	  </label>
 	</div>
+	<p>{{maxPrice}}</p>
+	<p>{{minPrice}}</p>
 	
 	<button ng-click="refresh()" class="button button-block button-positive icon-left ion-navicon-round">
 	  Filtrar
 	</button>
+	</form>
   </ion-content>
 </ion-view>

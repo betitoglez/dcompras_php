@@ -138,6 +138,9 @@ class Service {
 				"date_updated" => date("Y-m-d H:i:s"),
 				"name"=> $oItem->name
 			), array("extid = ?"=>$oItem->extid));
+			$this->update("product_category",array(
+					"id_category" => $oItem->catid
+			), array("id_product = (SELECT id FROM products WHERE extid = ?)"=>$oItem->extid));
 		}
 	}
 
