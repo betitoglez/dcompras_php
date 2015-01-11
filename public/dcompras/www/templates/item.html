@@ -1,11 +1,43 @@
 <ion-view view-title="{{selectedItem.name}}">
   <ion-content>
-    <div class="row responsive-sm">
+     <div class="row">
 	  <div class="col"> <h1>{{selectedItem.name}}</h1></div>
+     </div>
+     <div class="row">
 	  <div class="col"><img ng-src="{{imageUrl}}{{selectedItem.extid}}-large" ng-click="openModal()"/>  </div>
-	  <div class="col"><button ng-click="openUrl()" class="button icon-left ion-bag button-positive">Ver en tienda</button> </div>
-	  <div class="col">.col</div>
-	</div>
+	 </div>
+	 <div class="row">
+	  <div class="col"><button ng-click="openUrl()" class="button button-block icon-left ion-bag button-positive">Ver en tienda</button> </div>
+	  <div class="col"><button ng-click="openModal()" class="button button-block icon-left ion-image button-balanced">Ver imagen</button> </div>
+	 </div>
+	 <div class="row">
+	  <div class="col"><button ng-click="favorite(selectedItem)" class="button button-block icon-left ion-heart button-assertive">A&ntilde;adir a favorito</button> </div>
+	 </div>
+	 <div class="row">
+	  	<div class="col">
+			<div class="list card">
+
+			  <a href="#" class="item item-icon-left positive">
+			    <i class="icon ion-bag"></i>
+			    {{selectedItem.storename}}
+			  </a>
+			  
+			  <a href="#" class="item item-icon-left dark">
+			    <i class="icon ion-pricetag"></i>
+			    {{selectedItem.categoryname}}
+			  </a>
+			
+			  <a href="#" class="item item-icon-left balanced">
+			    <i class="icon ion-cash"></i>
+			    {{selectedItem.price}} EUR
+			  </a>
+			
+			
+			</div>
+		</div>
+	 </div>
+    
+    
     
    
      

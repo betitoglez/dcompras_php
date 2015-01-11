@@ -91,22 +91,21 @@ class Service {
 			if ($order == "id"){
 				$order = "products.id";
 			}else if ($order == "name"){
-				$order = "name";
+				$order = "products.name";
 			}else if ($order == "name_desc"){
-				$order = "name DESC";
+				$order = "products.name DESC";
 			}else if ($order == "price"){
-				$order = "price";
+				$order = "products.price";
 			}else if ($order == "price_desc"){
-				$order = "price DESC";
+				$order = "products.price DESC";
 			}
 		}else{
 			$order = "products.id";
 		}
 	
 		$oSelect->limit($count,$offset)->order($order);
-		
 		$aResult = $this->adapter->fetchAll($oSelect);
-	
+			
 		return $aResult;
 	}
 	

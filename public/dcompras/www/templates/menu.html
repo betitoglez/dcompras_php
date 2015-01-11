@@ -1,11 +1,17 @@
-<ion-side-menus enable-menu-with-back-views="false">
+<ion-side-menus enable-menu-with-back-views="true">
   <ion-side-menu-content>
     <ion-nav-bar class="bar-dark">
-      <ion-nav-back-button>
+      <ion-nav-back-button class="button-clear">
+      	 <i class="ion-arrow-left-c"></i> Volver 
       </ion-nav-back-button>
 
       <ion-nav-buttons side="left">
         <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+      
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-funnel" menu-toggle="right">
         </button>
       </ion-nav-buttons>
     </ion-nav-bar>
@@ -14,20 +20,35 @@
 
   <ion-side-menu side="left">
     <ion-header-bar class="bar-dark">
-      <h1 class="title">Left</h1>
+      <h1 class="title">Menu</h1>
     </ion-header-bar>
     <ion-content>
       <ion-list>
-        <ion-item nav-clear menu-close href="#/app/search">
-          Search
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/app/browse">
-          Browse
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/app/items">
+      	<ion-item nav-clear menu-close href="#/app/items">
           Productos
         </ion-item>
+        <ion-item nav-clear menu-close href="#/app/search">
+          Filtrar
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/fav">
+          Favoritos
+        </ion-item>
+       
       </ion-list>
+    </ion-content>
+  </ion-side-menu>
+  
+  <ion-side-menu side="right">
+    <ion-header-bar class="bar-dark">
+      <h1 class="title">Orden</h1>
+    </ion-header-bar>
+    <ion-content>
+        <ion-radio ng-model="order" ng-value="'name'" ng-change="sort(order)">Nombre</ion-radio>
+        <ion-radio ng-model="order" ng-value="'category'" ng-change="sort(order)">Categor&iacute;a</ion-radio>
+		<ion-radio ng-model="order" ng-value="'price'" ng-change="sort(order)">Precio: menor a mayor</ion-radio>
+		<ion-radio ng-model="order" ng-value="'price_desc'" ng-change="sort(order)">Precio: mayor a menor</ion-radio>
+		<ion-radio ng-model="order" ng-value="'store'" ng-change="sort(order)">Tienda</ion-radio>
+       
     </ion-content>
   </ion-side-menu>
 </ion-side-menus>

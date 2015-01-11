@@ -5,6 +5,32 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers'])
+.factory("Favorites",function(){
+	 var _favorites = function () {
+		 this._storage = Storage?window.localStorage:null;
+		 this.get = function  () {
+			 if (this._storage){
+				return this._storage.getItem("favorites")===null?[]:JSON.parse(this._storage.getItem("favorites")); 
+			 }else{
+				 return null;
+			 };
+		 };
+		 this.add = function (item) {
+			 var _auxSto = this.get();
+			 if (!_auxSto)
+				 return false;
+			 for (var i in _auxSto){
+				 if (_auxSto[i].id == item.id)
+					 return false;
+			 }
+			 _auxSto.push(item);
+			 var strFav = JSON.stringify(_auxSto);
+			 this._storage.setItem("favorites", strFav);
+			 return true;
+		 };
+	 };
+	 return new _favorites;
+ })
 .factory("Global",function(){
 	
 	var _imageUrl = function () {
@@ -79,11 +105,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  .state('app.browse', {
-    url: "/browse",
+  .state('app.fav', {
+    url: "/fav",
     views: {
       'menuContent': {
-        templateUrl: "templates/browse.html"
+        templateUrl: "templates/fav.html" ,
+        controller: 'FavCtrl'
       }
     }
   })

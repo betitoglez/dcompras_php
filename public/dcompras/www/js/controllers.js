@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope,$http, $ionicModal, $timeout, Global,i18,$ionicLoading,$location) {
+.controller('AppCtrl', function($scope,$http, $ionicModal, $timeout, Global,i18,$ionicLoading,$location,Favorites) {
 	//Translate module
 	$scope.t = i18;
 	
@@ -36,8 +36,11 @@ angular.module('starter.controllers', [])
     $scope.categories = [{id:0,name:"Cargando categorias..."}];
     $scope.categoriesModel = $scope.categories[0];
     
-    $scope.minPrice = "";
-    $scope.maxPrice = "";
+    $scope.form = {
+    		minPrice : "" ,
+    		maxPrice : ""
+    };
+
     
     if (navigator.globalization){
     	navigator.globalization.getPreferredLanguage(
@@ -54,6 +57,12 @@ angular.module('starter.controllers', [])
 	});
 
     $scope.params = "";
+    $scope.order = "name";
+    
+    $scope.sort  = function (order){
+    	    $scope.order = order;
+    		$scope.refresh();
+    };
     
     $scope.refresh = function (){
     	$scope.offset = 0;
@@ -61,20 +70,21 @@ angular.module('starter.controllers', [])
     	$scope.showLoading();
     	var _params = "";
     	var _id = $("select[name='slc-stores'] option:selected").val();
-    	if (_id != "0"){
+    	if (_id && _id != "0"){
     		_params += "id_store="+_id+"&";
     	}
     	_id = $("select[name='slc-categories'] option:selected").val();
-    	if (_id != "0"){
+    	if (_id && _id != "0"){
     		_params += "id_category="+_id+"&";
     	}
-    	console.log($scope.frmFilter.iMinprice);
-    	if ($scope.minPrice)
-    		_params += "price_min="+$scope.minPrice+"&";
+
+    	if ($scope.form.minPrice)
+    		_params += "price_min="+$scope.form.minPrice+"&";
     	
-    	if ($scope.maxPrice)
-    		_params += "price_max="+$scope.maxPrice+"&";
+    	if ($scope.form.maxPrice)
+    		_params += "price_max="+$scope.form.maxPrice+"&";
     	
+    	_params += "order="+$scope.order+"&";
     	
     	$scope.params = _params;
     	$location.path("/app/items");
@@ -107,10 +117,25 @@ angular.module('starter.controllers', [])
 	$scope.$on('$stateChangeSuccess', function() {
 	    $scope.loadMore();
 	});
+	
+	//Favorites
+	$scope.favoriteItems = Favorites.get();
+	$scope.favorite = function (item){
+		if (Favorites.add(item)){
+			$scope.favoriteItems.push(item);
+		};
+	};
 
 })
 
 .controller('ItemsCtrl', function($scope , $http , Global) {
+	
+	
+	
+  
+})
+
+.controller('FavCtrl', function($scope , $http , Global) {
 	
 	
 	

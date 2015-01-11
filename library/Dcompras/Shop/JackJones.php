@@ -138,13 +138,13 @@ final class JackJones extends Shop {
 		
 		$oGen->price = $price;
 		$oGen->name  = utf8_encode($name);
-		$oGen->url   = $url;
+		$oGen->url   = utf8_encode($url);
 		
 		$id = explode( "/",$url);
 		$extid = explode(",",array_pop($id))[0]; 
 		$oGen->extid = $this->id."-".$extid;
 		
-		$oGen->imgcusurl = $img;
+		$oGen->imgcusurl = utf8_encode($img);
 		$this->saveImage($img , $oGen->extid);
 			
 		return $oGen;	

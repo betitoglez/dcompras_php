@@ -65,10 +65,10 @@ final class Zara extends Shop {
 		$img = "http:".$img ;
 		
 		$oGen->price = $price;
-		$oGen->name  = utf8_decode($name);
-		$oGen->url   = $url;
+		$oGen->name  = $name;
+		$oGen->url   = utf8_encode($url);
 		$oGen->extid = $this->id . "-" . $extid;
-		$oGen->imgcusurl = $img;
+		$oGen->imgcusurl = utf8_encode($img);
 		
 		//Save the image url + name
 		$this->saveImage($img ,$oGen->extid);

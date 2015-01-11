@@ -48,6 +48,12 @@ class ApiController extends Zend_Controller_Action {
 			$aFilters["name"] = htmlentities($this->_request->get("name"));
 		}
 		
+		if ($this->_request->has("order")){
+			$order = $this->_request->get("order");
+		}else{
+			$order = "name";
+		}
+		
 		
 		if ($this->_request->has("offset") && is_numeric($this->_request->get("offset"))){
 			$offset = (int) $this->_request->get("offset");
@@ -55,7 +61,7 @@ class ApiController extends Zend_Controller_Action {
 			$offset = 0;
 		}
 		
-		$aProducts = DI::get("Db")->products($aFilters,20,$offset);
+		$aProducts = DI::get("Db")->products($aFilters,20,$offset,$order);
 		$this->view->products = $aProducts;
 	}
 	

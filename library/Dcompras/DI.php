@@ -6,10 +6,12 @@ use Dcompras\Db\Service;
 class DI {
 	
 	private static $self;
+	private $config;
 	
 	public static function get ($type){
 		if (!isset(self::$self)){
 			self::$self = new DI;
+			self::$self->config = \Zend_Registry::isRegistered("config")?\Zend_Registry::get("config"):null;
 		}
 		$aMethods = get_class_methods(self::$self);
 		if (!in_array($type, $aMethods)){
@@ -29,11 +31,27 @@ class DI {
 		if (\Zend_Registry::isRegistered("Log")){
 			return \Zend_Registry::get("Log");
 		}
+		
+		/** Database Logging **/
+		$params = array ('host'     => $this->config["database"]["host"],
+				'username' => $this->config["database"]["username"],
+				'password' => $this->config["database"]["password"],
+				'dbname'   => $this->config["database"]["dbname"]);
+		$db = \Zend_Db::factory('PDO_MYSQL', $params);
+		
+		$columnMapping = array('priority' => 'priority', 'message' => 'message',
+				'priority_name'=>'priorityName','datetime'=>'timestamp');
+		$dbWriter = new \Zend_Log_Writer_Db($db, 'logging', $columnMapping);
+		
+		
 		$oLog = new \Zend_Log();
-		$oFile = fopen("C:/Prueba.txt", "w+");
+		$oFile = fopen(APPLICATION_PATH."/../logs/".date("d_m_Y").".txt", "a+");
 		$oXMLFormatter = new \Zend_Log_Formatter_Xml();
 		$oLogWriter = new \Zend_Log_Writer_Stream($oFile);	
 		$oLog->addWriter($oLogWriter);
+		
+		$oLog->addWriter($dbWriter);
+		
 		
 		\Zend_Registry::set("Log", $oLog);
 		return $oLog;
