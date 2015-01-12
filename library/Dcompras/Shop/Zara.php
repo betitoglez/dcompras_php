@@ -14,13 +14,26 @@ final class Zara extends Shop {
 	protected $name = "Zara";
 	
 	protected $categories = array(
+		31 => array(
+					"url" => "http://www.zara.com/es/es/mujer/camisetas-c269189.html"
+		) ,
 		52 => array(
 			"url" => "http://www.zara.com/es/es/hombre/sudaderas-c309502.html"
 		)		,
 			
-		31 => array(
-			"url" => "http://www.zara.com/es/es/mujer/camisetas-c269189.html"		
-		)
+		82 => array(
+			"url" => "http://www.zara.com/es/es/rebajas/hombre/abrigos-y-trench-c540147.html"
+		) ,
+			
+		87 => array(
+			"url" => "http://www.zara.com/es/es/rebajas/hombre/cazadoras-c436056.html"
+		) ,
+			
+		92 => array(
+			"url" => "http://www.zara.com/es/es/rebajas/hombre/blazers-c436046.html"
+		) ,
+			
+		
 	);
 	
 	

@@ -68,8 +68,32 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 			"CARGANDO" : {
 				"es" : "Cargando..."
 			} ,
+			"SUDADERAS" : {
+				"es" : "Sudaderas"
+			},
 			"SUDADERAS_HOMBRE" : {
 				"es" : "Sudaderas hombre"
+			},
+			"SUDADERAS_MUJER" : {
+				"es" : "Sudaderas mujer"
+			},
+			"CAMISAS" : {
+				"es" : "Camisas"
+			},
+			"CAMISAS_HOMBRE" : {
+				"es" : "Camisas hombre"
+			},
+			"CAMISAS_MUJER" : {
+				"es" : "Camisas mujer"
+			},
+			"CAMISETAS" : {
+				"es" : "Camisetas"
+			},
+			"CAMISETAS_HOMBRE" : {
+				"es" : "Camisetas hombre"
+			},
+			"CAMISETAS_MUJER" : {
+				"es" : "Camisetas mujer"
 			}
 		};
 		
@@ -82,7 +106,18 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 		} ;
 		
 		this.translate = function (key){
-			return typeof this._t[key] !== "undefined"?this._t[key][this.language]:"i18 not available";
+			if (typeof this._t[key] !== "undefined"){
+			  if (typeof this._t[key][this.language] !== "undefined"){
+				  return this._t[key][this.language];
+			  }else if (this.language !== "es" && typeof this._t[key]["es"] !== "undefined") {
+				  return this._t[key]["es"];
+			  }else{
+				  return key;
+			  }
+			}else  {
+			   return key;	
+			}
+			
 		} ;
 	};
 	

@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope,$http, $ionicModal, $timeout, Global,i18,$ionicLoading,$location,Favorites) {
+.controller('AppCtrl', function($scope,$http, $ionicModal, $timeout, Global,i18,$ionicLoading,$location,Favorites,$ionicScrollDelegate) {
 	//Translate module
 	$scope.t = i18;
 	
@@ -14,6 +14,11 @@ angular.module('starter.controllers', [])
 	$scope.finished = false;
 	
 	$scope.showLoading();
+	
+	//Scroll top 
+	 $scope.scrollTop = function() {
+		    $ionicScrollDelegate.scrollTop(false);
+	 };
 	
 	$http.get(Global.url + "/api/stores").success(function(data){
 		$scope.stores = [{id:0,name:"Todas"}];
@@ -38,14 +43,17 @@ angular.module('starter.controllers', [])
     
     $scope.form = {
     		minPrice : "" ,
-    		maxPrice : ""
+    		maxPrice : "" ,
+    		descr    : ""
     };
 
-    
+    $scope.language = "es";
     if (navigator.globalization){
     	navigator.globalization.getPreferredLanguage(
-    	    function (language) {alert('language: ' + language.value + '\n');},
-    	    function () {alert('Error getting language\n');}
+    	    function (language) {
+    	    	 $scope.language = language.value.substr(0,2).toLowerCase();
+    	    	 },
+    	    function () {$scope.language = "es";}
     	);
     };
     
@@ -84,10 +92,14 @@ angular.module('starter.controllers', [])
     	if ($scope.form.maxPrice)
     		_params += "price_max="+$scope.form.maxPrice+"&";
     	
+    	if ($scope.form.descr)
+    		_params += "name="+$scope.form.descr+"&";
+    	
     	_params += "order="+$scope.order+"&";
     	
     	$scope.params = _params;
     	$location.path("/app/items");
+    	$scope.scrollTop();
     	$http.get(Global.url + "/api/products?"+_params).success(function(data){
     		if (data.length < 20){
     			$scope.finished = true;
@@ -135,14 +147,21 @@ angular.module('starter.controllers', [])
   
 })
 
-.controller('FavCtrl', function($scope , $http , Global, $ionicActionSheet) {
+.controller('FavCtrl', function($scope , $http , Global, $ionicActionSheet, Favorites) {
 	$scope.deleteFavorite = function (item) {
 		Favorites.deleteFavorite(item);
+		for (var i in $scope.favoriteItems){
+			 if ($scope.favoriteItems[i].id == item.id){
+				 $scope.favoriteItems.splice(i,1);
+			 }
+				 
+		}
 	};
 	
 	$scope.showSheet = function (item) {
 		// Show the action sheet
-		 var sheet  = $ionicActionSheet.show({
+		 
+		 $ionicActionSheet.show({
 		     buttons: [
 		     ],
 		     destructiveText: 'Borrar',
@@ -159,7 +178,7 @@ angular.module('starter.controllers', [])
 		       return true;
 		     }
 		 });
-		 return sheet ();
+
 	};
 	 
 	

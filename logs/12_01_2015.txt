@@ -1,0 +1,6 @@
+2015-01-12T22:11:14+01:00 INFO (6): Parseando tienda: Jack and Jones
+2015-01-12T22:11:47+01:00 INFO (6): Parseando tienda: Zara
+2015-01-12T22:21:26+01:00 INFO (6): Parseando tienda: Jack and Jones
+2015-01-12T22:22:40+01:00 INFO (6): Parseando tienda: Zara
+2015-01-12T23:08:43+01:00 INFO (6): Parseando tienda: Jack and Jones
+2015-01-12T23:09:37+01:00 INFO (6): Parseando tienda: Zara
