@@ -60,11 +60,17 @@ final class Zara extends Shop {
 		$price = isset($this->_itemSelector->select("span.price span")[0]["attributes"]["data-ecirp"])?$this->_itemSelector->select("span.price span")[0]["attributes"]["data-ecirp"]:null;
 		$price = floatval(str_replace(",", ".", $price));
 		
+		$oldprice = isset($this->_itemSelector->select("span.price span.crossOut")[0]["attributes"]["data-ecirp"])?$this->_itemSelector->select("span.price span.crossOut")[0]["attributes"]["data-ecirp"]:null;
+		if (isset($oldprice))
+			$oldprice = floatval(str_replace(",", ".", $oldprice));
+		
+		
 		$img = isset($this->_itemSelector->select("img.product-img")[0]["attributes"]["data-src"])?$this->_itemSelector->select("img.product-img")[0]["attributes"]["data-src"]:null;
 		
 		$img = "http:".$img ;
 		
 		$oGen->price = $price;
+		$oGen->oldprice = $oldprice;
 		$oGen->name  = $name;
 		$oGen->url   = utf8_encode($url);
 		$oGen->extid = $this->id . "-" . $extid;

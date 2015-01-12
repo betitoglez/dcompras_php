@@ -133,10 +133,20 @@ final class JackJones extends Shop {
 		$price = str_ireplace(array("?"), "", utf8_decode($price));
 		$price = floatval(str_replace(",", ".", $price));
 		
+		
+		$oldprice = isset($this->_itemSelector->select("div.strikethrough")[0]["text"])?$this->_itemSelector->select("div.strikethrough")[0]["text"]:null;
+		
+		if ($oldprice){
+			$oldprice = str_ireplace(array("?"), "", utf8_decode($oldprice));
+			$oldprice = floatval(str_replace(",", ".", $oldprice));
+		}
+		
+		
 		$img = isset($this->_itemSelector->select("img.product_thumbnail")[0]["attributes"]["src"])?$this->_itemSelector->select("img.product_thumbnail")[0]["attributes"]["src"]:null;
 		
 		
 		$oGen->price = $price;
+		$oGen->oldprice = $oldprice;
 		$oGen->name  = utf8_encode($name);
 		$oGen->url   = utf8_encode($url);
 		

@@ -117,6 +117,7 @@ class Service {
 				"url"=> $oItem->url ,
 				"image"=> $oItem->imgcusurl,
 				"price"=> $oItem->price,
+				"oldprice"=> $oItem->oldprice,
 				"extid"=> $oItem->extid ,
 				"name"=> $oItem->name
 			));
@@ -131,9 +132,8 @@ class Service {
 			$this->update("products", array(
 				"id_store"=> $oItem->shopid,
 				"url"=> $oItem->url ,
-				"image"=> $oItem->imgcusurl,
 				"price"=> $oItem->price,
-				"extid"=> $oItem->extid ,
+				"oldprice"=> $oItem->oldprice,
 				"date_updated" => date("Y-m-d H:i:s"),
 				"name"=> $oItem->name
 			), array("extid = ?"=>$oItem->extid));

@@ -31,8 +31,7 @@ abstract class Shop {
 	
 	public function __construct (){
 		$this->config = \Zend_Registry::get("config");
-		$oLog = DI::get("Log");
-		$oLog->log("Hola", \Zend_Log::INFO);
+		DI::get("Log")->log("Parseando tienda: " . $this->name, \Zend_Log::INFO);
 	}
 	
 	public function getItemsCategory ($idCategory,$id){
@@ -95,7 +94,8 @@ abstract class Shop {
     
     protected function _errorCategory ($idCategory)
     {
-    	
+    	DI::get("Log")->log("Ha fallado la categoria: ".$idCategory.
+    	" Tienda:" . $this->name, \Zend_Log::ERR);
     }
     
     public function getHTML ($sUri){

@@ -135,9 +135,33 @@ angular.module('starter.controllers', [])
   
 })
 
-.controller('FavCtrl', function($scope , $http , Global) {
+.controller('FavCtrl', function($scope , $http , Global, $ionicActionSheet) {
+	$scope.deleteFavorite = function (item) {
+		Favorites.deleteFavorite(item);
+	};
 	
-	
+	$scope.showSheet = function (item) {
+		// Show the action sheet
+		 var sheet  = $ionicActionSheet.show({
+		     buttons: [
+		     ],
+		     destructiveText: 'Borrar',
+		     destructiveButtonClicked : function () {
+		    	 $scope.deleteFavorite(item);
+		     } ,
+		     titleText: 'Administrar favorito',
+		     cancelText: 'Cancelar',
+		     cancel: function() {
+		          // add cancel code..
+		        },
+		     buttonClicked: function(index) {
+		       console.log(index);
+		       return true;
+		     }
+		 });
+		 return sheet ();
+	};
+	 
 	
   
 })

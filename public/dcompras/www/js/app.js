@@ -8,6 +8,22 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 .factory("Favorites",function(){
 	 var _favorites = function () {
 		 this._storage = Storage?window.localStorage:null;
+		 
+		 this.deleteFavorite = function (item){
+			 var _auxSto = this.get();
+			 if (!_auxSto)
+				 return false;
+			 for (var i in _auxSto){
+				 if (_auxSto[i].id == item.id){
+					 _auxSto.splice(i,1);
+				 }
+					 
+			 }
+			 var strFav = JSON.stringify(_auxSto);
+			 this._storage.setItem("favorites", strFav);
+			 return true; 
+		 };
+		 
 		 this.get = function  () {
 			 if (this._storage){
 				return this._storage.getItem("favorites")===null?[]:JSON.parse(this._storage.getItem("favorites")); 
