@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 
 use Dcompras\DI;
-use Dcompras\Shop\Zara;
+use Dcompras\Shop\Spf;
 use Dcompras\Shop\JackJones;
 use Dcompras\Mapping\Categories;
 use Dcompras\Mapping;
@@ -68,7 +68,7 @@ if (isset($_SERVER["argv"])){
 		
 	}
 }else{
-	$oShow = new JackJones();
+	$oShow = new Spf();
 	var_dump($oShow->getAllItems());
 	//die();
 }
