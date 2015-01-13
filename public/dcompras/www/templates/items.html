@@ -6,7 +6,7 @@
       	<img ng-src="{{imageUrl}}{{item.extid}}">
         <h2>{{item.name}}</h2>
         <p>{{item.price}} EUR <span ng-show="{{item.oldprice}}" style="text-decoration: line-through;">{{item.oldprice}} EUR</span> - {{t.translate(item.categoryname)}}</p>
-        <p ng-show="{{item.oldprice}}" style="color:#ef4e3a"> Rebajado! </p>
+        <p ng-show="{{item.oldprice}}" style="color:#ef4e3a">{{item.discount}}% Rebajado! </p>
         <p>{{item.storename}}</p>
         
         <ion-option-button class="button-info ion-heart assertive"

@@ -44,7 +44,8 @@ angular.module('starter.controllers', [])
     $scope.form = {
     		minPrice : "" ,
     		maxPrice : "" ,
-    		descr    : ""
+    		descr    : "" ,
+    		discounts : [5,10,20,30,50,70,90]
     };
 
     $scope.language = "es";
@@ -84,6 +85,11 @@ angular.module('starter.controllers', [])
     	_id = $("select[name='slc-categories'] option:selected").val();
     	if (_id && _id != "0"){
     		_params += "id_category="+_id+"&";
+    	}
+    	
+    	_id = $("select[name='slc-discount'] option:selected").val();
+    	if (_id && _id != "0"){
+    		_params += "discount="+_id+"&";
     	}
 
     	if ($scope.form.minPrice)
@@ -167,6 +173,7 @@ angular.module('starter.controllers', [])
 		     destructiveText: 'Borrar',
 		     destructiveButtonClicked : function () {
 		    	 $scope.deleteFavorite(item);
+		    	 return true;
 		     } ,
 		     titleText: 'Administrar favorito',
 		     cancelText: 'Cancelar',

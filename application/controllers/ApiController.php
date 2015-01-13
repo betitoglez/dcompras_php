@@ -44,6 +44,10 @@ class ApiController extends Zend_Controller_Action {
 			$aFilters["price_max"] = floatval($this->_request->get("price_max"));
 		}
 		
+		if ($this->_request->has("discount") && is_numeric($this->_request->get("discount"))){
+			$aFilters["discount"] = floatval($this->_request->get("discount"));
+		}
+		
 		if ($this->_request->has("name")){
 			$aFilters["name"] = htmlentities($this->_request->get("name"));
 		}

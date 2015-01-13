@@ -18,7 +18,7 @@
 	    <div class="input-label">
 	      Categorias
 	    </div>
-	    <select ng-model="categoriesModel" ng-options="category.name for category in categories track by category.id" name='slc-categories'>
+	    <select ng-model="categoriesModel" ng-options="t.translate(category.name) for category in categories track by category.id" name='slc-categories'>
 	    </select>
 	   </label>
 	</div>
@@ -40,6 +40,18 @@
 	    <i class="icon ion-search placeholder-icon"></i>
 	    <input name="form.descr" type="text" placeholder="Buscar..." ng-model="form.descr" >
 	  </label>
+	</div>
+	
+	<div class="list list-inset">
+	   <label class="item item-input item-select">
+	    <div class="input-label">
+	      Descuento minimo
+	    </div>
+	    <select name='slc-discount'>
+	      <option selected="selected" value="0"></option>
+	      <option ng-repeat="discount in form.discounts" value="{{discount}}">{{discount}}</option>
+	    </select>
+	   </label>
 	</div>
 	
 	<button ng-click="refresh()" class="button button-block button-positive icon-left ion-navicon-round">

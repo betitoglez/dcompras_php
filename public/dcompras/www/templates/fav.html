@@ -3,7 +3,7 @@
     <div ng-hide="favoriteItems.length">No tienes productos favoritos</div>
     <ion-list>
       <!-- href="#/app/item/{{item.id}}" -->
-      <ion-item class="item item-thumbnail-left" ng-repeat="item in favoriteItems"  on-hold="showSheet(item)">
+      <ion-item href="#/app/item/{{item.id}}" class="item item-thumbnail-left" ng-repeat="item in favoriteItems"  on-hold="showSheet(item)">
       	<img ng-src="{{imageUrl}}{{item.extid}}">
         <h2>{{item.name}}</h2>
         <p>{{item.price}} EUR - {{t.translate(item.categoryname)}}</p>

@@ -52,11 +52,11 @@ class Service {
 	
 	public function products (Array $aFilter = array(),$count = 20 , $offset = 0 , $order = "id")
 	{
-		$aAllowedFields = array ("id","name","price","price_min", "price_max","id_store","month","year","id_category");
-		$aAllowedFieldsOrder = array ("id","name" ,"name_desc","price","price_desc", "id_store","date","date_desc" ,"id_category");
+		$aAllowedFields = array ("id","name","price","price_min", "price_max","id_store","month","year","id_category" ,"discount");
+		$aAllowedFieldsOrder = array ("id","name" ,"name_desc","price","price_desc", "id_store","date","date_desc" ,"id_category" , "discount");
 		
 		$oSelect = new \Zend_Db_Select($this->adapter);
-		$oSelect->from("products")->joinLeft(array("B"=>"product_category"), "products.id = B.id_product",array("id_category"))
+		$oSelect->from("products")->columns(array("discount"=>new \Zend_Db_Expr("ABS(ROUND(100*(price-oldprice)/oldprice,0))")))->joinLeft(array("B"=>"product_category"), "products.id = B.id_product",array("id_category"))
 		->joinLeft(array("C"=>"stores"), "products.id_store = C.id", array("storename"=>"C.name"))
 		->joinLeft(array("D"=>"categories"), "B.id_category = D.id", array("categoryname"=>"D.name"));
 		
@@ -83,6 +83,9 @@ class Service {
 				else if ($key == "id_store" && is_numeric($value)){
 					$oSelect->where("products.id_store = ?" , intval($value));
 				}
+				else if ($key == "discount" && is_numeric($value)){
+				 	$oSelect->having("discount >= ?" , $value);
+				}
 			}
 		}
 		
@@ -98,6 +101,9 @@ class Service {
 				$order = "products.price";
 			}else if ($order == "price_desc"){
 				$order = "products.price DESC";
+			}else if ($order == "discount"){
+				$oSelect->having("discount > 0");
+				$order = "discount DESC";
 			}
 		}else{
 			$order = "products.id";
