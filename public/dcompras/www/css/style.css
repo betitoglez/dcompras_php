@@ -4,7 +4,7 @@
 	background-size: auto;
 	color: #fff;
 	border-color: #111;
-	background-color: #252625;
+	background-color: #212524;
 }
 
 ion-side-menu[side="left"] ion-content ion-item {
@@ -23,4 +23,13 @@ ion-side-menu.menu-left {
 
 .bar .title {
     color: #fff;
+}
+
+ion-content ion-item > a.item-content {
+	background-image: url(../img/bg-box.jpg) !important; 
+}
+
+ion-content ion-item > a.item-content:hover {
+	background-image: url(../img/bg-box-selected.jpg) !important; 
+	color: #fff !important;
 }
