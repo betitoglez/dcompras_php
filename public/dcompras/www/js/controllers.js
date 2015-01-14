@@ -133,7 +133,7 @@ angular.module('starter.controllers', [])
 	};
 	
 	$scope.$on('$stateChangeSuccess', function() {
-	    $scope.loadMore();
+	  //    $scope.loadMore();
 	});
 	
 	//Favorites
@@ -142,6 +142,20 @@ angular.module('starter.controllers', [])
 		if (Favorites.add(item)){
 			$scope.favoriteItems.push(item);
 		};
+	};
+	
+	$scope.favoriteExists = function (item){
+		return Favorites.exists(item);
+	};
+	
+	$scope.deleteFavorite = function (item) {
+		Favorites.deleteFavorite(item);
+		for (var i in $scope.favoriteItems){
+			 if ($scope.favoriteItems[i].id == item.id){
+				 $scope.favoriteItems.splice(i,1);
+			 }
+				 
+		}
 	};
 
 })
@@ -154,15 +168,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('FavCtrl', function($scope , $http , Global, $ionicActionSheet, Favorites) {
-	$scope.deleteFavorite = function (item) {
-		Favorites.deleteFavorite(item);
-		for (var i in $scope.favoriteItems){
-			 if ($scope.favoriteItems[i].id == item.id){
-				 $scope.favoriteItems.splice(i,1);
-			 }
-				 
-		}
-	};
+	
 	
 	$scope.showSheet = function (item) {
 		// Show the action sheet

@@ -1,1 +1,26 @@
 /* Empty. Add your own CSS if you like */
+.bar-dark ,ion-side-menu[side="left"] ,ion-side-menu[side="left"] ion-content ion-item > a , .bg-dark {
+    background-image: url(../img/sidebar_bg.png) !important; 
+	background-size: auto;
+	color: #fff;
+	border-color: #111;
+	background-color: #252625;
+}
+
+ion-side-menu[side="left"] ion-content ion-item {
+	border-bottom: 1px solid #000;
+    border-top: 1px solid;
+	margin-bottom: 1px;
+}
+
+ion-side-menu.menu-left {
+	background-image: url(../img/sidebar_bg.png) !important; 
+}
+
+.ion-side-menu[side="left"] ion-content ion-item > a:hover {
+	background-image: url(../img/sidebar_bg_hover.png) !important; 
+}
+
+.bar .title {
+    color: #fff;
+}

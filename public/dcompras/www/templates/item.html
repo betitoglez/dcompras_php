@@ -10,8 +10,11 @@
 	  <div class="col"><button ng-click="openUrl()" class="button button-block icon-left ion-bag button-positive">Ver en tienda</button> </div>
 	  <div class="col"><button ng-click="openModal()" class="button button-block icon-left ion-image button-balanced">Ver imagen</button> </div>
 	 </div>
-	 <div class="row">
+	 <div class="row" ng-hide="favoriteExists(selectedItem)">
 	  <div class="col"><button ng-click="favorite(selectedItem)" class="button button-block icon-left ion-heart button-assertive">A&ntilde;adir a favorito</button> </div>
+	 </div>
+	 <div class="row" ng-show="favoriteExists(selectedItem)">
+	  <div class="col"><button ng-click="deleteFavorite(selectedItem)" class="button button-block icon-left ion-heart-broken button-assertive">Eliminar de favoritos</button> </div>
 	 </div>
 	 <div class="row">
 	  	<div class="col">
