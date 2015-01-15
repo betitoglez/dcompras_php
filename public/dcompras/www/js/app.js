@@ -32,6 +32,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 			 };
 		 };
 		 this.exists = function (item){
+			 console.log(item);
 			 var _auxSto = this.get();
 			 if (!_auxSto)
 				 return false;

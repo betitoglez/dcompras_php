@@ -17,7 +17,7 @@ ion-side-menu.menu-left {
 	background-image: url(../img/sidebar_bg.png) !important; 
 }
 
-.ion-side-menu[side="left"] ion-content ion-item > a:hover {
+ion-content ion-item > a.item-content:hover {
 	background-image: url(../img/sidebar_bg_hover.png) !important; 
 }
 
@@ -29,7 +29,10 @@ ion-content ion-item > a.item-content {
 	background-image: url(../img/bg-box.jpg) !important; 
 }
 
-ion-content ion-item > a.item-content:hover {
+ion-side-menu-content  ion-content ion-item > a.item-content:hover {
 	background-image: url(../img/bg-box-selected.jpg) !important; 
-	color: #fff !important;
+}
+
+ion-side-menu-content ion-content ion-item > a.item-content:hover p{
+	color: #fff;
 }
