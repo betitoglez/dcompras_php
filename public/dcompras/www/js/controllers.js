@@ -145,6 +145,9 @@ angular.module('starter.controllers', [])
 	};
 	
 	$scope.favoriteExists = function (item){
+		if (!item){
+			return false;
+		}
 		return Favorites.exists(item);
 	};
 	
@@ -187,7 +190,7 @@ angular.module('starter.controllers', [])
 		          // add cancel code..
 		        },
 		     buttonClicked: function(index) {
-		       console.log(index);
+		       
 		       return true;
 		     }
 		 });
@@ -198,9 +201,11 @@ angular.module('starter.controllers', [])
   
 })
 
-.controller('ItemCtrl', function($scope, $stateParams, $location,$ionicModal) {
+.controller('ItemCtrl', function($scope, $stateParams, $location,$ionicModal,Favorites) {
+	
 	if ($scope.items.length == 0){
 		$location.path("/app/items");
+		return;
 	}
 	
 	$ionicModal.fromTemplateUrl('modal-image.html', {
@@ -226,8 +231,18 @@ angular.module('starter.controllers', [])
 			selectedId = i;
 		}
 	}
-	$scope.selectedItem = $scope.items[selectedId];
 	
+	if (!selectedId){
+		var favoriteItems = Favorites.get();
+		for (var i in favoriteItems){
+			if(favoriteItems[i].id == id){
+				$scope.selectedItem = favoriteItems[i];
+			}
+		}
+	}else{
+		$scope.selectedItem = $scope.items[selectedId];
+	}
+
 	$scope.openUrl = function ()
 	{
 		window.open($scope.selectedItem.url,'_system');
