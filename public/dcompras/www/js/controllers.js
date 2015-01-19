@@ -201,10 +201,10 @@ angular.module('starter.controllers', [])
   
 })
 
-.controller('ItemCtrl', function($scope, $stateParams, $location,$ionicModal,Favorites) {
-	
+.controller('ItemCtrl', function($scope, $stateParams, $location,$ionicModal,Favorites,$window,$templateCache) {
 	if ($scope.items.length == 0){
-		$location.path("/app/items");
+		$window.location.href = "?";
+		//$location.path("/app/items");
 		return;
 	}
 	
