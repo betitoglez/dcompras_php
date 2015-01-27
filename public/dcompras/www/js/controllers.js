@@ -4,6 +4,20 @@ angular.module('starter.controllers', [])
 	//Translate module
 	$scope.t = i18;
 	
+	
+	//Type Top Menu
+	$scope.topMenu = {
+		 defaultClassView : "ion-navicon-round"	,
+		 showList : true
+	};
+	
+	$scope.typeLeftView = "view";
+	
+	$scope.changeTypeView = function (type){
+		console.log(type);
+		$scope.typeLeftView = type;
+	}
+	
 	//Loading
 	$scope.showLoading = function() {$ionicLoading.show({
 	      template: i18.translate("CARGANDO")
@@ -11,7 +25,7 @@ angular.module('starter.controllers', [])
 	
 	//Offset
 	$scope.offset = 0;
-	$scope.finished = false;
+	$scope.finished = true;
 	
 	$scope.showLoading();
 	
@@ -63,6 +77,7 @@ angular.module('starter.controllers', [])
     $http.get(Global.url + "/api/products").success(function(data){
 		$scope.items = data;
 		$ionicLoading.hide();
+
 	});
 
     $scope.params = "";
@@ -164,7 +179,6 @@ angular.module('starter.controllers', [])
 })
 
 .controller('ItemsCtrl', function($scope , $http , Global) {
-	
 	
 	
   

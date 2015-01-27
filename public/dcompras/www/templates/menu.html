@@ -11,7 +11,9 @@
       </ion-nav-buttons>
       
       <ion-nav-buttons side="right">
-        <button class="button button-icon button-clear ion-funnel" menu-toggle="right">
+      	<button ng-click="changeTypeView('view')" class="button button-icon button-clear {{topMenu.defaultClassView}}" menu-toggle="right">
+        </button>
+        <button ng-click="changeTypeView('sort')" class="button button-icon button-clear ion-funnel" menu-toggle="right">
         </button>
       </ion-nav-buttons>
     </ion-nav-bar>
@@ -41,7 +43,7 @@
     </ion-content>
   </ion-side-menu>
   
-  <ion-side-menu side="right">
+  <ion-side-menu side="right" ng-show="typeLeftView=='sort'">
     <ion-header-bar class="bg-dark">
       <h1 class="title">Orden</h1>
     </ion-header-bar>
@@ -52,6 +54,14 @@
 		<ion-radio ng-model="order" ng-value="'price_desc'" ng-change="sort(order)">Precio: mayor a menor</ion-radio>
 		<ion-radio ng-model="order" ng-value="'store'" ng-change="sort(order)">Tienda</ion-radio>
         <ion-radio ng-model="order" ng-value="'discount'" ng-change="sort(order)">Mayores descuentos</ion-radio>
+    </ion-content>
+  </ion-side-menu>
+  
+  <ion-side-menu side="right" ng-show="typeLeftView=='view'">
+    <ion-header-bar class="bg-dark">
+      <h1 class="title">Vista</h1>
+    </ion-header-bar>
+    <ion-content>
     </ion-content>
   </ion-side-menu>
 </ion-side-menus>
