@@ -8,15 +8,15 @@ angular.module('starter.controllers', [])
 	//Type Top Menu
 	$scope.topMenu = {
 		 defaultClassView : "ion-navicon-round"	,
+		 defaultTypeView : "list" ,
 		 showList : true
 	};
 	
 	$scope.typeLeftView = "view";
 	
 	$scope.changeTypeView = function (type){
-		console.log(type);
 		$scope.typeLeftView = type;
-	}
+	};
 	
 	//Loading
 	$scope.showLoading = function() {$ionicLoading.show({

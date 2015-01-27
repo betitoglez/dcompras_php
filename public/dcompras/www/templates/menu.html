@@ -27,15 +27,15 @@
     <ion-content>
       <ion-list>
       	<ion-item nav-clear menu-close href="#/app/items">
-      	  <i class="icon ion-bag placeholder-icon"></i>
+      	  <i class="icon ion-bag"></i>
           Productos
         </ion-item>
         <ion-item nav-clear menu-close href="#/app/search">
-          <i class="icon ion-search placeholder-icon"></i>
+          <i class="icon ion-search"></i>
           Buscar
         </ion-item>
         <ion-item nav-clear menu-close href="#/app/fav">
-          <i class="icon ion-heart placeholder-icon"></i>
+          <i class="icon ion-heart"></i>
           Favoritos
         </ion-item>
        
@@ -62,6 +62,14 @@
       <h1 class="title">Vista</h1>
     </ion-header-bar>
     <ion-content>
+       <ion-radio ng-model="topMenu.defaultTypeView" ng-value="'list'" ng-change="topMenu.showList=true;topMenu.defaultClassView='ion-navicon-round'">
+       	<i class="icon ion-navicon-round"></i> 
+       	  Lista
+       </ion-radio>
+       <ion-radio ng-model="topMenu.defaultTypeView" ng-value="'grid'" ng-change="topMenu.showList=false;topMenu.defaultClassView='ion-grid'">
+         <i class="icon ion-grid"></i> 
+         Mosaico
+       </ion-radio>
     </ion-content>
   </ion-side-menu>
 </ion-side-menus>

@@ -36,3 +36,39 @@ ion-side-menu-content  ion-content ion-item > a.item-content:hover {
 ion-side-menu-content ion-content ion-item > a.item-content:hover p{
 	color: #fff;
 }
+
+/*** Grid View ***/
+.imageGrid > .imageGridElement {
+            float: left;
+            position: relative;
+            width: 101px;
+            height: 170px;
+            margin: 0 5px;
+            padding: 0;
+}
+
+.imageGrid > .imageGridElement p {
+            visibility: hidden;
+        }
+.imageGrid > .imageGridElement a {
+	color: #fff;
+	text-decoration: none;
+}
+.imageGrid > .imageGridElement:hover p , .imageGrid > .imageGridElement.activeItem p {
+            visibility: visible;
+            position: absolute;
+            width: 101px;
+            height: 133px;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            line-height: 133px;
+            vertical-align: middle;
+            text-align: center;
+            color: #fff;
+            background-color: rgba(0,0,0,0.75);
+            transition: background .2s linear, color .2s linear;
+            -moz-transition: background .2s linear, color .2s linear;
+            -webkit-transition: background .2s linear, color .2s linear;
+            -o-transition: background .2s linear, color .2s linear;
+}

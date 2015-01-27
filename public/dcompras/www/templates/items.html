@@ -1,7 +1,7 @@
 <ion-view view-title="Productos">
   <ion-content>
     <div ng-hide="items.length">No se encontraron productos</div>
-    <ion-list>
+    <ion-list ng-show="topMenu.showList">
       <ion-item class="item item-thumbnail-left" ng-repeat="item in items" href="#/app/item/{{item.id}}">
       	<img ng-src="{{imageUrl}}{{item.extid}}">
         <h2>{{item.name}}</h2>
@@ -15,8 +15,15 @@
       </ion-item>
     </ion-list>
     
+    <div class="imageGrid" ng-show="!topMenu.showList">
+    	<div class="imageGridElement" ng-repeat="item in items" href="#/app/item/{{item.id}}">
+    		<img ng-src="{{imageUrl}}{{item.extid}}">
+    		<p><a href="#/app/item/{{item.id}}">{{item.price}} EUR</a></p>
+    	</div>
+    </div>
+    
 	  <ion-infinite-scroll
-	    ng-if="!finished"
+	    ng-if="finished"
 	    on-infinite="loadMore()"
 	    distance="1%">
 	  </ion-infinite-scroll>
