@@ -1,49 +1,26 @@
+
+
+
 <ion-view view-title="{{selectedItem.name}}">
   <ion-content>
-     <div class="row">
-	  <div class="col"> <h1>{{selectedItem.name}}</h1></div>
-     </div>
-     <div class="row">
-	  <div class="col"><img ng-src="{{imageUrl}}{{selectedItem.extid}}-large" ng-click="openModal()"/>  </div>
-	 </div>
-	 <div class="row">
-	  <div class="col"><button ng-click="openUrl()" class="button button-block icon-left ion-bag button-positive">Ver en tienda</button> </div>
-	  <div class="col"><button ng-click="openModal()" class="button button-block icon-left ion-image button-balanced">Ver imagen</button> </div>
-	 </div>
-	 <div class="row" ng-hide="favoriteExists(selectedItem)">
-	  <div class="col"><button ng-click="favorite(selectedItem)" class="button button-block icon-left ion-heart button-assertive">A&ntilde;adir a favorito</button> </div>
-	 </div>
-	 <div class="row" ng-show="favoriteExists(selectedItem)">
-	  <div class="col"><button ng-click="deleteFavorite(selectedItem)" class="button button-block icon-left ion-heart-broken button-assertive">Eliminar de favoritos</button> </div>
-	 </div>
-	 <div class="row">
-	  	<div class="col">
-			<div class="list card">
-
-			  <a href="#" class="item item-icon-left positive">
-			    <i class="icon ion-bag"></i>
-			    {{selectedItem.storename}}
-			  </a>
-			  
-			  <a href="#" class="item item-icon-left dark">
-			    <i class="icon ion-pricetag"></i>
-			    {{t.translate(selectedItem.categoryname)}}
-			  </a>
-			
-			  <a href="#" class="item item-icon-left balanced">
-			    <i class="icon ion-cash"></i>
-			    {{selectedItem.price}} EUR
-			  </a>
-			
-			
-			</div>
+     <div class="row responsive-sm">
+		<div class="col"><img ng-src="{{imageUrl}}{{selectedItem.extid}}-large" ng-click="openModal()"/></div>
+		<div class="col">
+			<h1 class="product_title">{{selectedItem.name}}</h1>
+			<p class="product_price">{{selectedItem.price}} EUR <span ng-show="{{selectedItem.oldprice}}" class="discountPrice">{{selectedItem.oldprice}} EUR</span></p>
+			<p><i class="icon ion-bag"></i> <strong>Tienda:</strong> {{selectedItem.storename}}</p>
+			<p><i class="icon ion-pricetag"></i> <strong>Categor&iacute;a:</strong> {{t.translate(selectedItem.categoryname)}}</p>
 		</div>
-	 </div>
-    
-    
-    
-   
-     
+		<div class="col">
+		    <button class="btn btn-default" ng-click="openUrl()"><i class="icon ion-bag"></i> Ver en tienda</button>
+		    <button ng-click="openModal()" class="btn btn-default"><i class="icon ion-search"></i> Ampliar imagen</button>
+	    </div>
+	    <div class="col">
+		    <button ng-hide="favoriteExists(selectedItem)" ng-click="favorite(selectedItem)" class="btn btn-default"><i class="icon ion-heart"></i>A&ntilde;adir a favorito</button> 
+		    <button ng-show="favoriteExists(selectedItem)" ng-click="deleteFavorite(selectedItem)" class="btn btn-default"><i class="icon ion-heart-broken"></i>Eliminar de favoritos</button>
+	    </div>
+	</div>
+	
     
   </ion-content>
 </ion-view>
