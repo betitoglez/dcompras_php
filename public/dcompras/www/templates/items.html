@@ -23,7 +23,7 @@
     </div>
     
 	  <ion-infinite-scroll
-	    ng-if="finished"
+	    ng-if="!finished"
 	    on-infinite="loadMore()"
 	    distance="1%">
 	  </ion-infinite-scroll>

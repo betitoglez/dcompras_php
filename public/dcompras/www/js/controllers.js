@@ -1,8 +1,19 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope,$http, $ionicModal, $timeout, Global,i18,$ionicLoading,$location,Favorites,$ionicScrollDelegate) {
+.controller('AppCtrl', function($scope,$http, $ionicModal, $timeout, Global,i18,$ionicLoading,$location,Favorites,$ionicScrollDelegate,$ionicSideMenuDelegate ) {
 	//Translate module
 	$scope.t = i18;
+
+	//Hide Right Menu
+	
+	$scope.$on( "$ionicView.enter", function( scopes, states ) {
+      if (states.stateId && states.stateId != "app.items"){
+        $("span.right-buttons").hide();
+      }else if (states.stateId && states.stateId == "app.items"){
+    	  $("span.right-buttons").show(); 
+      }
+    });
+
 	
 	
 	//Type Top Menu
@@ -25,7 +36,7 @@ angular.module('starter.controllers', [])
 	
 	//Offset
 	$scope.offset = 0;
-	$scope.finished = true;
+	$scope.finished = false;
 	
 	$scope.showLoading();
 	
@@ -180,8 +191,6 @@ angular.module('starter.controllers', [])
 
 .controller('ItemsCtrl', function($scope , $http , Global) {
 	
-	
-  
 })
 
 .controller('FavCtrl', function($scope , $http , Global, $ionicActionSheet, Favorites) {
