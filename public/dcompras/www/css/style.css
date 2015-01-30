@@ -74,12 +74,23 @@ html, body {
 
 
 
-.bar-dark ,ion-side-menu[side="left"] ,ion-side-menu[side="left"] ion-content ion-item > a , .bg-dark {
+.bar-dark ,ion-side-menu[side="left"] ,ion-side-menu[side="left"] ion-content ion-item > a , 
+.bg-dark{
     background-image: url(../img/sidebar_bg.png) !important;
 	background-size: auto;
 	color: #fff;
 	border-color: #111;
 	background-color: #212524;
+}
+
+ion-side-menu[side="left"] .scroll {
+	height: 100%;
+}
+
+.bottomItem {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 ion-side-menu[side="left"] ion-content ion-item {
