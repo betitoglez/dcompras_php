@@ -29,11 +29,12 @@ class ApiController extends Zend_Controller_Action {
 	
 	public function productsAction () {
 		$aFilters = array();
-		if ($this->_request->has("id_store") && is_numeric($this->_request->get("id_store"))){
-			$aFilters["id_store"] = (int) $this->_request->get("id_store");
+
+		if ($this->_request->has("id_store") && $this->_checkIn($this->_request->get("id_store"))){
+			$aFilters["id_store"] = htmlspecialchars($this->_request->get("id_store"));
 		}
-		if ($this->_request->has("id_category") && is_numeric($this->_request->get("id_category"))){
-			$aFilters["id_category"] = (int) $this->_request->get("id_category");
+		if ($this->_request->has("id_category")&& $this->_checkIn($this->_request->get("id_category")) ){
+			$aFilters["id_category"] = htmlspecialchars($this->_request->get("id_category"));
 		}
 		
 		if ($this->_request->has("price_min") && is_numeric($this->_request->get("price_min"))){
@@ -55,7 +56,7 @@ class ApiController extends Zend_Controller_Action {
 		if ($this->_request->has("order")){
 			$order = $this->_request->get("order");
 		}else{
-			$order = "name";
+			$order = "id_desc";
 		}
 		
 		
@@ -72,5 +73,14 @@ class ApiController extends Zend_Controller_Action {
 	public function storesAction () {
 		$aStores = DI::get("Db")->stores();
 		$this->view->stores = $aStores;
+	}
+	
+	private function _checkIn ($string){
+		$aExplode = explode(",",$string);
+		foreach ($aExplode as $mValue){
+			if (!is_numeric($mValue))
+				return false;
+		}
+		return true;
 	}
 }

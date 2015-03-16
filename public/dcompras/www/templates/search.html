@@ -1,26 +1,30 @@
 <ion-view view-title="Filtrar">
   <ion-content>
     <form name="frmFilter">
-     <div class="list list-inset">
-	   <label class="item item-input item-select">
-	    <div class="input-label">
-	      Tiendas
-	    </div>
-
-	    <select ng-model="storesModel" ng-options="store.name for store in stores track by store.id" name='slc-stores'>
-	    </select>
-	  
-	   </label>
+   
+	<div class="list list-inset cnt-multiselect multi-stores">
+		<div
+		    isteven-multi-select 
+		    input-model="stores"
+		    output-model="outStores"
+		    button-label="name"         
+		    item-label="name" 
+		    translation="langShops"
+		    tick-property="ticked"
+		    >
+		</div>
 	</div>
 	
-	<div class="list list-inset">
-	   <label class="item item-input item-select">
-	    <div class="input-label">
-	      Categorias
-	    </div>
-	    <select ng-model="categoriesModel" ng-options="t.translate(category.name) for category in categories track by category.id" name='slc-categories'>
-	    </select>
-	   </label>
+	<div class="list list-inset cnt-multiselect multi-categories">
+		<div
+		    isteven-multi-select 
+		    input-model="categories"
+		    output-model="categoriesModel"
+		    button-label="icon name"         
+		    item-label="icon name maker" 
+		    translation="langCat"
+		    tick-property="ticked">
+		</div>
 	</div>
 	
 	<div class="list list-inset">
@@ -53,6 +57,9 @@
 	    </select>
 	   </label>
 	</div>
+
+	
+	
 	
 	<button class="btn btn-default" ng-click="refresh()"><i class="icon ion-navicon-round"></i> Filtrar</button>
 	</form>

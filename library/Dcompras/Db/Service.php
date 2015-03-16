@@ -76,12 +76,11 @@ class Service {
 					$oSelect->where("products.price <= ?" , floatval($value));
 				}
 				
-				else if ($key == "id_category" && is_numeric($value)){
-					$oSelect->where("B.id_category = ? OR D.parent_id = ?" , intval($value));
-					
+				else if ($key == "id_category"){
+					$oSelect->where("B.id_category IN ($value) OR D.parent_id IN ($value)");				
 				}
-				else if ($key == "id_store" && is_numeric($value)){
-					$oSelect->where("products.id_store = ?" , intval($value));
+				else if ($key == "id_store"){
+					$oSelect->where("products.id_store IN ($value)" );
 				}
 				else if ($key == "discount" && is_numeric($value)){
 				 	$oSelect->having("discount >= ?" , $value);
@@ -104,12 +103,15 @@ class Service {
 			}else if ($order == "discount"){
 				$oSelect->having("discount > 0");
 				$order = "discount DESC";
+			}else if ($order == "id_desc"){
+				$order = "products.id DESC";
 			}
 		}else{
 			$order = "products.id";
 		}
 	
 		$oSelect->limit($count,$offset)->order($order);
+
 		$aResult = $this->adapter->fetchAll($oSelect);
 			
 		return $aResult;

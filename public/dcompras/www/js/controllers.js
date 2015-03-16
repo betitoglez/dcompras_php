@@ -1,9 +1,18 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', [ "isteven-multi-select"])
 
 .controller('AppCtrl', function($scope,$http, $ionicModal, $timeout, Global,i18,$ionicLoading,$location,Favorites,$ionicScrollDelegate,$ionicSideMenuDelegate ) {
 	//Translate module
 	$scope.t = i18;
-
+	
+	$scope.langs = {
+		    selectAll       : "Todos",
+		    selectNone      : "Ninguno",
+		    reset           : "Resetear",
+		    search          : "Buscar...",
+		    nothingSelected : "Nada seleccionado"     
+		};
+	$scope.langShops = angular.extend({},$scope.langs,{nothingSelected:"Ninguna tienda"});
+	$scope.langCat = angular.extend({},$scope.langs,{nothingSelected:"Ninguna categoria"});
 	//Hide Right Menu
 	
 	$scope.$on( "$ionicView.enter", function( scopes, states ) {
@@ -44,27 +53,32 @@ angular.module('starter.controllers', [])
 	 $scope.scrollTop = function() {
 		    $ionicScrollDelegate.scrollTop(false);
 	 };
-	
+	 
+	//Inicializando tiendas
+	$scope.storeSelected = function (store){
+			console.log(storeSelected);
+	};
+	$scope.stores = [];
 	$http.get(Global.url + "/api/stores").success(function(data){
-		$scope.stores = [{id:0,name:"Todas"}];
 		for (var i in data){
 			$scope.stores.push(data[i]);
 		}
-		$scope.storesModel = $scope.stores[0];
+
 	});
+	
+	//Inicializando Categorías
+	$scope.categories = [];
 	$http.get(Global.url + "/api/categories").success(function(data){
-		$scope.categories = [{id:0,name:"Todas"}];
 		for (var i in data["maps"]){
-			var _aux = {id:i,name:data["maps"][i]["name"]};
+			var _aux = {id:i,name:i18.translate(data["maps"][i]["name"]),key:data["maps"][i]["name"]};
 			$scope.categories.push(_aux);
 		}
-		$scope.categoriesModel = $scope.categories[0];
 	});
-    $scope.stores = [{id:0,name:"Cargando tiendas..."}];
-    //$scope.storesModel = $scope.stores[0];
+
     
-    $scope.categories = [{id:0,name:"Cargando categorias..."}];
-    $scope.categoriesModel = $scope.categories[0];
+    
+    
+
     
     $scope.form = {
     		minPrice : "" ,
@@ -103,14 +117,20 @@ angular.module('starter.controllers', [])
     	$scope.offset = 0;
     	$scope.finished = false;
     	$scope.showLoading();
+    	var _stores = $scope.getMultiSelect("multi-stores",$scope.stores),
+    	    _categories = $scope.getMultiSelect("multi-categories",$scope.categories);
+    	
+    	_stores = _stores.length > 0 ? _stores.join(","):null;
+    	_categories = _categories.length > 0 ? _categories.join(","):null;
+    	
     	var _params = "";
-    	var _id = $("select[name='slc-stores'] option:selected").val();
-    	if (_id && _id != "0"){
-    		_params += "id_store="+_id+"&";
+
+    	if (_stores){
+    		_params += "id_store="+_stores+"&";
     	}
-    	_id = $("select[name='slc-categories'] option:selected").val();
-    	if (_id && _id != "0"){
-    		_params += "id_category="+_id+"&";
+ 
+    	if (_categories){
+    		_params += "id_category="+_categories+"&";
     	}
     	
     	_id = $("select[name='slc-discount'] option:selected").val();
@@ -185,6 +205,30 @@ angular.module('starter.controllers', [])
 			 }
 				 
 		}
+	};
+	
+	$scope.getMultiSelect = function (type, aMatch){
+		//Workaround
+		var aSelected = [];
+		$("."+type+ " .checkBoxContainer > div").each(function(){
+			if ($(this).find("span.tickMark").length > 0){
+				aSelected.push($(this).find("div.acol span.ng-binding").text());
+			}
+		});
+		
+		if (aMatch){
+			var auxSelected = [];
+			for (var i in aSelected){
+				for (var j in aMatch){
+					if (aSelected[i].trim() == aMatch[j]["name"].trim()){
+						auxSelected.push(aMatch[j]["id"]);
+						break;
+					}
+				}
+			}
+			aSelected = auxSelected;
+		}
+		return aSelected;
 	};
 
 })
